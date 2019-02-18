@@ -129,21 +129,9 @@ button {
     width: (62/14)+rem;
     height: (74/14)+rem;
   }
-  .quickAnchor{
-    padding: (90/14)+rem 14.4% 0;
-    a{
-      float: left;
-      display: block;
-      margin-bottom: (35/14)+rem;
-      width: 36.6%;
-      height: (100/14)+rem;
-      &.two,&.four{
-        margin-left: 22%;
-      }
-    }
-  }
   .order {
     color: #222;
+    padding: 0 (38/14)+rem;
     input, select {
       margin-bottom: (10/14)+rem;
       border: 0;
@@ -172,9 +160,6 @@ button {
       box-shadow: 0 (6/14)+rem 0 #dd7200;
     }
   }
-  .topOrder {
-    padding: 0 (38/14)+rem;
-  }
   .textScollBox{
     margin-top: (16/14)+rem;
     height: (30/14)+rem;
@@ -183,29 +168,16 @@ button {
     color: #fff;
     font-size: (10/14)+rem;
     overflow: hidden;
-  }
-  .reviewSwiper {
-    padding: 0 (15/14)+rem (30/14)+rem;
-    background: #f4be16;
-    .swiper-pagination {
-      left: 0;
-      bottom: (45/14)+rem;
-      width: 100%;
-      .swiper-pagination-bullet {
-        width: (10/14)+rem;
-        height: (2/14)+rem;
+    li{
+      opacity: 0.4;
+      transition: all 0.5s;
+      &.on{
+        opacity: 1;
       }
     }
   }
 }
 
-.fixRightZx{
-  position: fixed;
-  right: (5/14)+rem;
-  bottom: (100/14)+rem;
-  z-index: 10;
-  width: (64/14)+rem;
-}
 //弹框
 .actPopBox{
   display: none;
@@ -226,14 +198,11 @@ button {
   .order{
     position: relative;
     margin-left:- (15/14)+rem;
-    padding: (40/14)+rem (25/14)+rem (10/14)+rem (33/14)+rem;
-    width: 91.46% ;
-    max-width: (343/14)+rem;
-    background: url("pop.png") no-repeat top center / 100% 100%;
+    padding: 0 (25/14)+rem 0 (33/14)+rem;
     .close{
       position: absolute;
-      top:(10/14)+rem;
-      right: (8/14)+rem;
+      top:(20/14)+rem;
+      right: (60/14)+rem;
       display: block;
       margin: (15/14)+rem auto 0;
       width: (30/14)+rem;

@@ -93,18 +93,9 @@ button {
   display: block;
   width: 4.4285714286rem;
   height: 5.2857142857rem; }
-.actCon .quickAnchor {
-  padding: 6.4285714286rem 14.4% 0; }
-.actCon .quickAnchor a {
-  float: left;
-  display: block;
-  margin-bottom: 2.5rem;
-  width: 36.6%;
-  height: 7.1428571429rem; }
-.actCon .quickAnchor a.two, .actCon .quickAnchor a.four {
-  margin-left: 22%; }
 .actCon .order {
-  color: #222; }
+  color: #222;
+  padding: 0 2.7142857143rem; }
 .actCon .order input, .actCon .order select {
   margin-bottom: 0.7142857143rem;
   border: 0;
@@ -129,8 +120,6 @@ button {
   font-weight: bolder;
   background: #f8bc00;
   box-shadow: 0 0.4285714286rem 0 #dd7200; }
-.actCon .topOrder {
-  padding: 0 2.7142857143rem; }
 .actCon .textScollBox {
   margin-top: 1.1428571429rem;
   height: 2.1428571429rem;
@@ -139,23 +128,11 @@ button {
   color: #fff;
   font-size: 0.7142857143rem;
   overflow: hidden; }
-.actCon .reviewSwiper {
-  padding: 0 1.0714285714rem 2.1428571429rem;
-  background: #f4be16; }
-.actCon .reviewSwiper .swiper-pagination {
-  left: 0;
-  bottom: 3.2142857143rem;
-  width: 100%; }
-.actCon .reviewSwiper .swiper-pagination .swiper-pagination-bullet {
-  width: 0.7142857143rem;
-  height: 0.1428571429rem; }
-
-.fixRightZx {
-  position: fixed;
-  right: 0.3571428571rem;
-  bottom: 7.1428571429rem;
-  z-index: 10;
-  width: 4.5714285714rem; }
+.actCon .textScollBox li {
+  opacity: 0.4;
+  transition: all 0.5s; }
+.actCon .textScollBox li.on {
+  opacity: 1; }
 
 .actPopBox {
   display: none;
@@ -176,14 +153,11 @@ button {
 .actPop .order {
   position: relative;
   margin-left: -1.0714285714rem;
-  padding: 2.8571428571rem 1.7857142857rem 0.7142857143rem 2.3571428571rem;
-  width: 91.46%;
-  max-width: 24.5rem;
-  background: url("pop.png") no-repeat top center/100% 100%; }
+  padding: 0 1.7857142857rem 0 2.3571428571rem; }
 .actPop .order .close {
   position: absolute;
-  top: 0.7142857143rem;
-  right: 0.5714285714rem;
+  top: 1.4285714286rem;
+  right: 4.2857142857rem;
   display: block;
   margin: 1.0714285714rem auto 0;
   width: 2.1428571429rem;

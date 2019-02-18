@@ -7,8 +7,6 @@
     <link type="text/css" rel="stylesheet" href="https://m.ikongjian.com/assets/2017/css/css.css">
     <link type="text/css" rel="stylesheet" href="images/activitys.css">
     <script type="text/javascript" src="https://m.ikongjian.com/assets/2017/js/jquery.min.js"></script>
-    <script type="text/javascript" src="https://m.ikongjian.com/assets/2017/js/swiper.min.js"></script>
-    <script type="text/javascript" src="https://m.ikongjian.com/assets/2017/js/function.js"></script>
 </head>
 <body>
 <div class="actCon">
@@ -16,22 +14,14 @@
     <img src="images/kdsd_01.jpg" alt="">
     <img src="images/kdsd_02.jpg" alt="">
     <img src="images/kdsd_03.jpg" alt="">
+    <img src="images/kdsd_04.jpg" alt="">
+    <img src="images/kdsd_05.jpg" alt="">
     <div class="actFlow">
-        <img src="images/kdsd_04.jpg" alt="">
-        <img src="images/kdsd_05.jpg" alt="">
-        <div class="actFlowBox quickAnchor">
-            <a class="one" href="#quickAnchorA"></a>
-            <a class="two" href="#quickAnchorB"></a>
-            <a class="three" href="#quickAnchorC"></a>
-            <a class="four" href="#quickAnchorD"></a>
-        </div>
-    </div>
-    <div class="actFlow firstScreen">
         <img src="images/kdsd_06.jpg" alt="">
         <div class="actFlowBox">
             <div class="order topOrder">
                 <select>
-                    <option>所在城市</option>
+                    <option>房屋所在城市</option>
                     <option>北京</option>
                 </select>
                 <input class="user" type="text" placeholder="您的称呼" value="">
@@ -41,7 +31,7 @@
             <div class="textScollBox">
                 <ul>
                     <li>北京   150*****351 预约参加盛典</li>
-                    <li>广州   186*****658 预约参加盛典</li>
+                    <li class="on">广州   186*****658 预约参加盛典</li>
                     <li>昆明   139*****228 预约参加盛典</li>
                     <li>西安   180*****695 预约参加盛典</li>
                     <li>廊坊   186*****826 预约参加盛典</li>
@@ -54,70 +44,18 @@
             </div>
         </div>
     </div>
-    <img src="images/kdsd_07.jpg" alt="">
-    <img src="images/kdsd_08.jpg" alt="">
-    <img src="images/kdsd_08_1.jpg" alt="">
-    <div class="actFlow">
-        <img class="actPopBtn" src="images/kdsd_09.jpg" alt="">
-        <img class="actPopBtn" src="images/kdsd_10.jpg" alt="">
-        <img class="actPopBtn" src="images/kdsd_11.jpg" alt="">
-    </div>
-    <img class="actPopBtn" src="images/kdsd_12.jpg" alt="">
-    <img class="actPopBtn" src="images/kdsd_13.jpg" alt="">
-    <img class="actPopBtn" src="images/kdsd_14.jpg" alt="">
-    <img id="quickAnchorA" src="images/kdsd_15.jpg" alt="">
-    <img id="quickAnchorB" src="images/kdsd_16.jpg" alt="">
-    <img src="images/kdsd_17.jpg" alt="">
-    <img src="images/kdsd_18.jpg" alt="">
-    <img src="images/kdsd_19.jpg" alt="">
-    <img src="images/kdsd_20.jpg" alt="">
-    <img id="quickAnchorD" src="images/kdsd_21.jpg" alt="">
-    <img src="images/kdsd_22.jpg" alt="">
-    <img id="quickAnchorC" src="images/kdsd_23.jpg" alt="">
-    <img src="images/kdsd_24.jpg" alt="">
-    <img src="images/kdsd_25.jpg" alt="">
-    <img src="images/kdsd_26.jpg" alt="">
-    <div class="swiper-container reviewSwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/review_1.jpg"></div>
-            <div class="swiper-slide"><img src="images/review_2.jpg"></div>
-            <div class="swiper-slide"><img src="images/review_3.jpg"></div>
-            <div class="swiper-slide"><img src="images/review_4.jpg"></div>
-            <div class="swiper-slide"><img src="images/review_5.jpg"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <img src="images/kdsd_27.jpg" alt="">
+
 
     <!--弹层-->
     <div class="actPopBox">
         <div class="actPop">
         <div class="order">
             <a class="close" href="javascript:;"></a>
-            <h3>2019开年盛典等你来聚</h3>
-            <div class="number">已有<span>2345</span>人报名参加活动</div>
-            <select>
-                <option>所在城市</option>
-                <option>北京</option>
-            </select>
-            <input class="user" type="text" placeholder="您的称呼" value="">
-            <input class="phone" type="tel" placeholder="您的电话" value="">
-            <button>立即预约</button>
-            <div class="tips">由于优惠力度大，时间有限，马上来抢</div>
+            <img src="images/pop.png">
         </div>
     </div>
     </div>
 </div>
-
-<!--吸底浮层-->
-<div class="btnFixBottom">
-    <div class="btnFixBox">
-        <a class="actPopFixBtn" href="javascript:void('0');"><span>2019开年盛典等你来聚</span></a>
-    </div>
-</div>
-
-<!--在线咨询-->
-<div class="fixRightZx"><img src="images/zx.png" alt="在线咨询"></div>
 
 <script type="text/javascript">
     var timer;
@@ -131,6 +69,16 @@
     function ScrollTop() {
         $("body,html,.actCon").removeAttr("style");
         $(window).scrollTop(scrollTop);
+    };
+
+    //提示框
+    function errorTips(text) {
+        $(".errorTips").remove();
+        var tips = '<div class="errorTips"><p>'+text+'</p></div>';
+        $(tips).appendTo("body");
+        $(".errorTips").show();
+        window.clearInterval(timer);
+        timer = setTimeout('$(".errorTips").remove()',2000);
     };
 
     /*不间断滚动*/
@@ -149,6 +97,8 @@
                     if (s >= step) {
                         $(this).find("li").slice(0, 1).appendTo($(this));
                         $(this).css("margin-top", 0);
+                        $(this).find("li").removeClass("on");
+                        $(this).find("li").eq(1).addClass("on");
                     }
                 });
             }
@@ -162,43 +112,15 @@
                         marquee(_this, sh);
                     }
                 }, speed);
-                _this.hover(function () {
-                    clearInterval(intId[i]);
-                }, function () {
-                    intId[i] = setInterval(function () {
-                        if (_this.find("ul").height() <= _this.height()) {
-                            clearInterval(intId[i]);
-                        } else {
-                            marquee(_this, sh);
-                        }
-                    }, speed);
-                });
             });
         }
     })(jQuery);
 
     $(function () {
-        //锚链
-        $(".quickAnchor a").click(function (e) {
-            e.preventDefault();
-            var id = $(this).attr("href");
-            $('html,body').animate({
-                scrollTop: $(id).offset().top
-            }, 1000);
-        });
         //文字滚动
         $(".textScollBox").myScroll();
-        //精彩回顾
-        var reviewSwiper = new Swiper('.reviewSwiper', {
-            autoplay: 3000,
-            effect : 'fade',
-            loop : true,
-            pagination : '.swiper-pagination',
-            autoplayDisableOnInteraction : false
-        });
-
         //显示弹框
-        $(".actPopFixBtn,.actPopBtn").click(function () {
+        $(".order button").click(function () {
             noScroll();
             $(".actPopBox").show();
         });
