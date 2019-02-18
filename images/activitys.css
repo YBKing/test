@@ -134,6 +134,14 @@ button {
 .actCon .textScollBox li.on {
   opacity: 1; }
 
+.copyright {
+  margin-top: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.6428571429rem;
+  height: 1.8571428571rem;
+  line-height: 1.8571428571rem; }
+
 .actPopBox {
   display: none;
   position: fixed;
@@ -163,67 +171,5 @@ button {
   width: 2.1428571429rem;
   height: 2.1428571429rem;
   background: url("close.png") no-repeat center center/100% 100%; }
-.actPop .order h3 {
-  font-size: 1.5rem;
-  text-align: center; }
-.actPop .order .number {
-  margin-bottom: 1.4285714286rem;
-  text-align: center; }
-.actPop .order .number span {
-  margin: 0 0.1428571429rem;
-  color: #ff0280; }
-.actPop .order button {
-  background: #db026e;
-  background-image: -moz-linear-gradient(top, #ff0280, #db026e);
-  background-image: -webkit-linear-gradient(top, #ff0280, #db026e);
-  box-shadow: 0 0.4285714286rem 0 #a0044a;
-  color: #fff; }
-.actPop .order .tips {
-  margin-top: 1.1428571429rem;
-  color: #ea6c00;
-  text-align: center; }
-
-/*.copyright{ color: #d5d5d5; text-align: center; font-size: (9/14)+rem; height: (26/14)+rem; line-height: (26/14)+rem;}*/
-.btnFixBottom {
-  position: fixed;
-  left: 0;
-  bottom: -1px;
-  z-index: 3;
-  width: 100%;
-  height: 3.9285714286rem;
-  box-shadow: 0 -1px 0.7142857143rem rgba(0, 0, 0, 0.7); }
-
-.btnFixBottom .btnFixBox {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  overflow: hidden;
-  text-align: center; }
-
-.btnFixBottom .btnFixBox a {
-  display: block;
-  height: 3.9285714286rem;
-  color: #fff;
-  font-size: 1.3571428571rem;
-  font-weight: bolder;
-  line-height: 3.9285714286rem;
-  background: #d00246;
-  overflow: hidden; }
-
-.fixRightZx {
-  display: inline-block;
-  -webkit-animation: scale 0.3s ease-in-out infinite alternate;
-  animation: scale 0.3s ease-in-out infinite alternate; }
-
-@-webkit-keyframes scale {
-  from {
-    -webkit-transform: scale(1.05); }
-  to {
-    -webkit-transform: scale(1); } }
-@keyframes scale {
-  from {
-    transform: scale(1.05); }
-  to {
-    transform: scale(1); } }
 
 /*# sourceMappingURL=activitys.css.map */
