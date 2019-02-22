@@ -259,6 +259,9 @@ select {
 .paddingLr {
   padding: 0 1.07142857rem;
 }
+.xjTop {
+  margin: 2.85714286rem 0 -0.85714286rem;
+}
 .sec_tit {
   padding: 1.78571429rem 0 2.14285714rem;
   text-align: center;
@@ -531,7 +534,8 @@ select {
 .actPop .order select {
   border-color: #666;
 }
-.actPop .orderScu {
+.actPop .orderScu,
+.actPop .orderRedScu {
   display: none;
   width: 80%;
   max-width: 600px;
@@ -555,15 +559,6 @@ select {
   -webkit-animation: swing 0.3s ease-in-out infinite alternate;
   -o-animation: swing 0.3s ease-in-out infinite alternate;
   animation: swing 0.3s ease-in-out infinite alternate;
-}
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .actCon {
-    padding-bottom: 3.14285714rem;
-  }
-  .btBtnBox a,
-  .btBtnBox a span {
-    height: 6.71428571rem;
-  }
 }
 .order button span,
 .btBtnBox a:last-child span i,

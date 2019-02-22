@@ -38,9 +38,9 @@
                     <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
                 </p>
                 <p>
-                    <input class="phone" type="tel" placeholder="联系方式，给您效果图" value="">
+                    <input class="phone" type="tel" placeholder="联系方式，以便给您提供方案" value="">
                 </p>
-                <p><button><span>立即领取</span></button></p>
+                <p><button id="button1"><span>立即领取</span></button></p>
                 <div class="tips">*为了您的隐私及我们的声誉 您的信息将被严格保密*</div>
             </div>
         </div>
@@ -164,7 +164,7 @@
         </div>
         <div class="actPopBtnBox"><img src="img/btn_1.png" align="0元领专属方案"></div>
     </div>
-    <img src="img/xj.jpg" alt="">
+    <img class="xjTop" src="img/xj.jpg" alt="">
     <div class="sec_tit">
         <h2>看看样间 帮您远离装修陷阱</h2>
         <img src="img/arrow_2.png" alt="">
@@ -213,11 +213,11 @@
         <div class="actPopInner">
             <div class="order">
                 <div class="hd">
-                    <img src="img/pop_hd.png" alt="">
+                    <img class="bg" src="img/pop_hd.png" alt="">
                     <img class="money" src="img/money.png" alt="">
                     <img class="title" src="img/pop_hd_tit.png" alt="恭喜您获得4999元装修红包">
                 </div>
-                <form>
+                <form class="nomalForm">
                     <p>
                         <select>
                             <option>房屋所在城市</option>
@@ -228,14 +228,35 @@
                         <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
                     </p>
                     <p>
-                        <input class="phone" type="tel" placeholder="联系方式，以便给您效果图" value="">
+                        <input class="phone" type="tel" placeholder="联系方式，以便给您提供方案" value="">
                     </p>
-                    <p><button>立即领取</button></p>
+                    <p><button id="button2">立即领取</button></p>
+                    <div class="tips">为了您的隐私及我们的声誉 您的信息将被严格保密</div>
+                </form>
+                <!--红包表单-->
+                <form class="redBagForm">
+                    <p>
+                        <select>
+                            <option>房屋所在城市</option>
+                            <option>北京</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
+                    </p>
+                    <p>
+                        <input class="phone" type="tel" placeholder="联系方式，方便给您装修红包" value="">
+                    </p>
+                    <p><button id="button3">立即领取</button></p>
                     <div class="tips">为了您的隐私及我们的声誉 您的信息将被严格保密</div>
                 </form>
             </div>
             <!--预约成功-->
             <div class="orderScu" style="display: none">
+                <img src="img/pop_scu_n.png" alt="预约成功"></a>
+            </div>
+            <!--预约成功-->
+            <div class="orderRedScu" style="display: none">
                 <img src="img/pop_scu.png" alt="预约成功"></a>
             </div>
             <span class="close"></span>
@@ -278,15 +299,28 @@
     //预约成功
     function orderActScu() {
         scrollTop = ($(window).scrollTop() > 0) ? $(window).scrollTop() : scrollTop;
-        $(".actPop .order").hide();
+        $(".actPop .order,.actPop .orderRedScu").hide();
         $(".actPop,.actPop .orderScu").show();
+    }
+    function orderRedActScu() {
+        scrollTop = ($(window).scrollTop() > 0) ? $(window).scrollTop() : scrollTop;
+        $(".actPop .order,.actPop .orderScu").hide();
+        $(".actPop,.actPop .orderRedScu").show();
     }
 
     //预约框
     function orderPop() {
         noScroll ();
-        $(".actPop .orderScu").hide();
-        $(".actPop,.actPop .order").show();
+        $(".actPop .orderScu,.actPop .orderRedScu,.actPop .redBagForm").hide();
+        $(".actPop .hd .bg").attr("src","img/pop_hd_n.png");
+        $(".actPop .hd .money,.actPop .hd .title,.actPop .redBagForm").hide();
+        $(".actPop,.actPop .order,.actPop .nomalForm").show();
+    }
+    function orderRedPop() {
+        noScroll ();
+        $(".actPop .orderScu,.actPop .orderRedScu,.actPop .nomalForm").hide();
+        $(".actPop .hd .bg").attr("src","img/pop_hd.png");
+        $(".actPop .hd .money,.actPop .hd .title,.actPop,.actPop .order,.actPop .redBagForm").show();
     }
 
     $(function () {
@@ -412,7 +446,13 @@
             }
         });
 
-        $(".actPopBtnBox img,.btBtnBox .actPopBtn,.popDidiBtn,.rightRedBag").click(function () {
+        //领红包弹窗
+        $(".rightRedBag").click(function () {
+            orderRedPop();
+        });
+
+        //方案弹层
+        $(".actPopBtnBox img,.btBtnBox .actPopBtn").click(function () {
             orderPop();
         });
 
@@ -423,9 +463,13 @@
         });
 
         //预约成功
-        $(".order button").click(function (e) {
+        $("#button1,#button2").click(function (e) {
             e.preventDefault();
             orderActScu();
+        });
+        $("#button3").click(function (e) {
+            e.preventDefault();
+            orderRedActScu();
         });
     })
 </script>
