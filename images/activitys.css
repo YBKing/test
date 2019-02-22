@@ -32,7 +32,9 @@ body > img:last-of-type {
   html {
     font-size: 24px; } }
 iframe {
-  vertical-align: top;
+  vertical-align: top; }
+
+.videoBox {
   height: 15.0714285714rem; }
 
 .actFlow {
