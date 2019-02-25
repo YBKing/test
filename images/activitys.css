@@ -35,7 +35,17 @@ iframe {
   vertical-align: top; }
 
 .videoBox {
-  height: 15.0714285714rem; }
+  position: relative;
+  min-height: 15.0714285714rem; }
+.videoBox img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -2.3928571429rem 0 0 -2.3928571429rem;
+  width: 4.7857142857rem; }
+.videoBox video {
+  vertical-align: top; }
 
 .actFlow {
   position: relative; }

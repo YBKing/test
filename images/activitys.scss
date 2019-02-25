@@ -60,7 +60,19 @@ iframe{
   vertical-align: top;
 }
 .videoBox{
-  height:  (211/14)+rem;
+  position: relative;
+  min-height: (211/14)+rem;
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin:  (-33.5/14)+rem 0 0 (-33.5/14)+rem;
+    width: (67/14)+rem;
+  }
+  video{
+    vertical-align: top;
+  }
 }
 
 .actFlow {

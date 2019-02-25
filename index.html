@@ -21,7 +21,11 @@
         </div>
     </div>
     <div class="videoBox">
-        <iframe width="100%" height="100%" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=a0538pdmbuk&auto=0" allowfullscreen></iframe>
+        <!--<iframe width="100%" height="100%" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=a0538pdmbuk&auto=0" allowfullscreen></iframe>-->
+        <video id="video" width="100%;" webkit-playsinline="true" x5-playsinline=""  playsinline=""  webkit-playsinline="">
+            <source src="https://img.ikongjian.com/upload/20190225/cxs.mp4" type="video/mp4" />
+        </video>
+        <img src="images/play.png" alt="">
     </div>
     <div class="actFlow">
         <img src="images/fbh_04.jpg">
@@ -31,9 +35,6 @@
                 标准化家装三大要素之一“信息化”，<br>
                 让我们一起简单回顾一下吧。</p>
         </div>
-    </div>
-    <div class="videoBox">
-        <iframe width="100%" height="100%" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=k0600apvz4u&auto=0"  allowfullscreen></iframe>
     </div>
     <div class="reviewImg">
         <img class="animate" src="images/p1.jpg" alt="2018年发布会精彩回顾-移动互联时代的标准化家装（图一）">
@@ -50,6 +51,22 @@
     <img src="images/fbh_10.png" alt="">
 </div>
 <script type="text/javascript">
+    function play() {
+        var video = $("video").get(0);
+        if(video.paused){
+            $('.videoBox img').css({
+                "z-index" : 0,
+                "opacity" : 0
+            });
+            video.play();
+        }else{
+            $('.videoBox img').css({
+                "z-index" : 1,
+                "opacity" : 1
+            });
+            video.pause();
+        }
+    }
     $(function () {
         var endTime = new Date("2019/03/06, 00:00:00");
         var curTime = new Date();
@@ -65,6 +82,10 @@
         }else{
             $(".countdown").html('<span>'+d+'</span>');
         }
+
+        $(".videoBox").click(function () {
+            play();
+        })
         /*
         var screenHeight = window.innerHeight || document.documentElement.clientHeight;
         $(window).scroll(function () {
