@@ -415,7 +415,7 @@ img {
     color: #d5d5d5;
 }
 
-.actBanner .order button,.actSecC .order button,.actPopBtn {
+.actBanner .order button, .actSecC .order button, .actPopBtn {
     cursor: pointer;
     -webkit-animation: scale 0.4s ease-in-out infinite alternate;
     animation: scale 0.4s ease-in-out infinite alternate;
@@ -423,10 +423,10 @@ img {
 
 .rightBar {
     position: fixed;
-    top: 200px;
+    top: 100px;
     left: 50%;
     z-index: 2;
-    margin-left: 600px;
+    margin-left: 580px;
     width: 80px;
     height: 400px;
     background: url("siderbar.png") no-repeat top center;
@@ -550,7 +550,7 @@ img {
     opacity: 0.8;
 }
 
-.resPop,.actOrderScu,.actOrderRedScu{
+.resPop, .actOrderScu, .actOrderRedScu {
     display: none;
     position: fixed;
     top: 50%;
@@ -560,13 +560,16 @@ img {
     width: 500px;
     height: 500px;
 }
-.actOrderScu,.actOrderRedScu{
+
+.actOrderScu, .actOrderRedScu {
     text-align: center;
 }
-.actOrderScu .close,.actOrderRedScu .close{
+
+.actOrderScu .close, .actOrderRedScu .close {
     margin-top: 20px;
 }
-.resPop{
+
+.resPop {
     background: url("pop_hd.png") no-repeat top center;
 }
 
@@ -580,36 +583,43 @@ img {
     width: 31px;
     height: 31px;
 }
-.resPop .hd{
+
+.resPop .hd {
     position: relative;
     height: 142px;
     text-align: center;
     color: #fff;
     font-size: 18px;
 }
-.resPop .hd img{
+
+.resPop .hd img {
     position: absolute;
     top: 25px;
     left: -28px;
 }
-.resPop .hd span{
+
+.resPop .hd span {
     margin: 0 5px;
 }
-.resPop .nomalForm .hd{
+
+.resPop .nomalForm .hd {
     padding-top: 35px;
 }
-.resPop .nomalForm h3{
+
+.resPop .nomalForm h3 {
     margin-bottom: 5px;
     font-size: 34px;
 }
 
-.resPop .redBagForm .hd{
+.resPop .redBagForm .hd {
     padding-top: 30px;
 }
-.resPop .redBagForm h3{
+
+.resPop .redBagForm h3 {
     font-size: 32px;
 }
-.resPop .redBagForm h3 span{
+
+.resPop .redBagForm h3 span {
     display: block;
     font-weight: normal;
 }
@@ -621,57 +631,89 @@ img {
     border-radius: 0 0 8px 8px;
 }
 
-.resPop .redBagForm .order{
+.resPop .redBagForm .order {
     padding-top: 36px;
 }
 
-.resPop .order ul li{
+.resPop .order ul li {
     width: 143px;
     border: 1px solid #b1b1b1;
     color: #000;
     font-size: 16px;
     background: transparent;
 }
-.resPop .order ul li.active{
+
+.resPop .order ul li.active {
     border-color: #fcce40;
     background: #fcce40;
 }
 
-.resPop .order input, .resPop .order select{
+.resPop .order input, .resPop .order select {
     border: 1px solid #b1b1b1;
 }
-.resPop .order select{
+
+.resPop .order select {
     background-position: 410px center;
 }
 
 @-webkit-keyframes scale {
     from {
-        -webkit-transform: scale(1.05); }
+        -webkit-transform: scale(1.05);
+    }
     to {
-        -webkit-transform: scale(1); } }
+        -webkit-transform: scale(1);
+    }
+}
+
 @keyframes scale {
     from {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+    }
     to {
-        transform: scale(1); } }
+        transform: scale(1);
+    }
+}
+
 @-webkit-keyframes swing {
     from {
-        -webkit-transform: rotate(10deg); }
+        -webkit-transform: rotate(10deg);
+    }
     to {
-        -webkit-transform: rotate(-10deg); } }
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
 @keyframes swing {
     from {
-        transform: rotate(10deg); }
+        transform: rotate(10deg);
+    }
     to {
-        transform: rotate(-10deg); } }
+        transform: rotate(-10deg);
+    }
+}
 
 @-webkit-keyframes moveUp {
     from {
-        margin-top: -3px; }
+        margin-top: -3px;
+    }
     to {
-        margin-top: 0; } }
+        margin-top: 0;
+    }
+}
+
 @keyframes moveUp {
     from {
-        margin-top: -3px; }
+        margin-top: -3px;
+    }
     to {
-        margin-top: 0; } }
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .rightBar{
+        left: inherit;
+        right: 10px;
+        margin-left: 0;
+    }
+}
