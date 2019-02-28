@@ -1,0 +1,677 @@
+*, *:before, *:after {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px "苹方", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input, button, input[type=text] {
+    border: 0;
+    vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::-moz-placeholder {
+    color: #b0b0b0;
+}
+
+input:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::placeholder {
+    color: #b0b0b0;
+}
+
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*表单*/
+.order .hd {
+    text-align: center;
+    color: #fff;
+}
+
+.order .hd h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.order .hd p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.order .hd span {
+    margin: 0 3px;
+    color: #f9e97e;
+}
+
+.order ul {
+    margin-left: -10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.order li {
+    float: left;
+    margin: 0 0 10px 10px;
+    width: 126px;
+    height: 55px;
+    background: #65ae69;
+    color: #000;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.order li.active {
+    background: #fcce40;
+}
+
+.order p {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.order p label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 52px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.order p img {
+    vertical-align: middle;
+}
+
+.order input, .order select {
+    padding: 10px 20px 10px 52px;
+    width: 100%;
+    height: 55px;
+    line-height: 35px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.order select {
+    background: url("select.png") no-repeat 365px center #fff;
+}
+
+.order button {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: #311d06;
+    font-size: 28px;
+    background: #fcce40;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.order p.tips {
+    margin-top: 15px;
+    height: auto;
+    color: #ffafba;
+    text-align: center;
+}
+
+.activityCon {
+    min-width: 1100px;
+}
+
+.actSecCon {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.actBanner .title {
+    display: none;
+}
+
+.actBanner {
+    height: 646px;
+    background: url("design_bg_01.jpg") no-repeat top center;
+}
+
+.actSecA {
+    height: 650px;
+    background: url("design_bg_02.jpg") no-repeat top center;
+}
+
+.actSecB {
+    height: 890px;
+    background: url("design_bg_03.jpg") no-repeat top center;
+}
+
+.actSecC {
+    height: 820px;
+    background: url("design_bg_04.jpg") no-repeat top center;
+}
+
+.actSecD {
+    height: 1248px;
+    background: url("design_bg_05.jpg") no-repeat top center;
+}
+
+.actSecE {
+    height: 1044px;
+    background: url("design_bg_06.jpg") no-repeat top center;
+}
+
+.actSecF {
+    height: 1328px;
+    background: url("design_bg_07.jpg") no-repeat top center;
+}
+
+.actSecG {
+    height: 918px;
+    background: url("design_bg_08.jpg") no-repeat top center;
+}
+
+.actSecH {
+    height: 362px;
+    background: url("design_bg_09.jpg") no-repeat top center;
+}
+
+.actBanner .actSecCon {
+    position: relative;
+    padding-top: 55px;
+}
+
+.actBanner a.logo {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    display: block;
+    width: 77px;
+    height: 95px;
+}
+
+.actBanner .order {
+    margin-left: 624px;
+    width: 400px;
+}
+
+.actSecB .actDesigner {
+    padding: 223px 10px 10px;
+}
+
+.actDesigner {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.actDesigner .hd {
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.actDesigner .hd ul {
+    margin-left: -10px;
+}
+
+.actDesigner .hd li {
+    float: left;
+    margin-left: 10px;
+    width: 353px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 26px;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.actDesigner .hd li.on {
+    background: #000;
+    color: #fcce40;
+}
+
+.actDesigner .bd {
+    position: relative;
+    height: 510px;
+    overflow: hidden;
+}
+
+.actBtnBox {
+    text-align: center;
+}
+
+.actBtnBox img {
+    cursor: pointer;
+}
+
+.actBtnBox .actPopBtn {
+    margin-left: 160px;
+}
+
+.actSecC .order {
+    margin: 140px 0 0 680px;
+    width: 400px;
+}
+
+.actSecC .order .hd {
+    color: #000;
+}
+
+.actSecC .order li {
+    border: 1px solid #b1b1b1;
+    color: #000;
+    background: transparent;
+}
+
+.actSecC .order li.active {
+    background: #349755;
+    border-color: #349755;
+}
+
+.actSecC .order input, .actSecC .order select {
+    border: 1px solid #b1b1b1;
+}
+
+.actSecC .order button {
+    background: #349755;
+    color: #fff;
+}
+
+.actSecD .actSecCon {
+    padding-top: 1100px;
+}
+
+.actSecE .actSecCon {
+    padding-top: 872px;
+}
+
+.actSecF .actSecCon {
+    padding-top: 370px;
+}
+
+.actSecF .actExample {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.actSecF .actExample .hd {
+    margin-bottom: 10px;
+}
+
+.actSecF .actExample .hd ul {
+    margin-left: -11px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.actSecF .actExample .hd li {
+    float: left;
+    margin-left: 11px;
+    padding: 12px 0;
+    width: 266px;
+    font-size: 20px;
+    border: 1px solid #afafaf;
+    cursor: pointer;
+}
+
+.actSecF .actExample .hd li.on {
+    background: #fbd64b;
+    border-color: #fbd64b;
+}
+
+.actSecF .actExample .hd li span {
+    display: block;
+    font-weight: bold;
+}
+
+.actSecF .actExample .bd {
+    height: 550px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.actSecF .actDidi {
+    position: relative;
+    margin-top: 50px;
+}
+
+.actSecF .actDidi a {
+    position: absolute;
+    left: 555px;
+    top: 176px;
+    display: block;
+    width: 265px;
+    height: 60px;
+    line-height: 60px;
+    background: #fbd64b;
+    color: #222;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.copyright {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+.actBanner .order button,.actSecC .order button,.actPopBtn {
+    cursor: pointer;
+    -webkit-animation: scale 0.4s ease-in-out infinite alternate;
+    animation: scale 0.4s ease-in-out infinite alternate;
+}
+
+.rightBar {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    z-index: 2;
+    margin-left: 600px;
+    width: 80px;
+    height: 400px;
+    background: url("siderbar.png") no-repeat top center;
+}
+
+.rightBar a {
+    display: block;
+    width: 80px;
+    height: 100px;
+}
+
+.rightBar .redBag {
+    margin: 12px auto 0;
+    box-shadow: 0 0 8px #666;
+    border-radius: 8px;
+    -webkit-animation: swing 0.3s ease-in-out infinite alternate;
+    animation: swing 0.3s ease-in-out infinite alternate;
+}
+
+.actFixOrder {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+}
+
+.actFixOrder .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.actFixOrder h3 {
+    float: left;
+    padding-top: 18px;
+    font-size: 32px;
+    width: 294px;
+    padding-left: 20px;
+    color: #fbd64b;
+    font-weight: normal;
+}
+
+.actFixOrder h3 span {
+    color: #fff;
+    display: block;
+}
+
+.actFixOrder .order {
+    position: relative;
+    padding-top: 35px;
+}
+
+.actFixOrder .order input, .actFixOrder .order select {
+    float: left;
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 190px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.actFixOrder .order select {
+    background: url("select.png") no-repeat 160px center #fff;
+}
+
+.actFixOrder .order button {
+    width: 190px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.actFixOrder .order .close {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.actFixFold {
+    position: fixed;
+    bottom: 0;
+    right: -280px;
+    z-index: 2;
+    background: url("unfold.png") no-repeat;
+    padding-top: 25px;
+    width: 148px;
+    height: 134px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.actFixFold img {
+    text-align: center;
+    -webkit-animation: moveUp 0.3s ease-in-out infinite alternate;
+    animation: moveUp 0.3s ease-in-out infinite alternate;
+}
+
+/*预约弹框*/
+.hdMask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.resPop,.actOrderScu,.actOrderRedScu{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 21;
+    margin: -300px 0 0 -250px;
+    width: 500px;
+    height: 500px;
+}
+.actOrderScu,.actOrderRedScu{
+    text-align: center;
+}
+.actOrderScu .close,.actOrderRedScu .close{
+    margin-top: 20px;
+}
+.resPop{
+    background: url("pop_hd.png") no-repeat top center;
+}
+
+.resPop .close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+}
+.resPop .hd{
+    position: relative;
+    height: 142px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.resPop .hd img{
+    position: absolute;
+    top: 25px;
+    left: -28px;
+}
+.resPop .hd span{
+    margin: 0 5px;
+}
+.resPop .nomalForm .hd{
+    padding-top: 35px;
+}
+.resPop .nomalForm h3{
+    margin-bottom: 5px;
+    font-size: 34px;
+}
+
+.resPop .redBagForm .hd{
+    padding-top: 30px;
+}
+.resPop .redBagForm h3{
+    font-size: 32px;
+}
+.resPop .redBagForm h3 span{
+    display: block;
+    font-weight: normal;
+}
+
+.resPop .order {
+    padding: 20px 24px 32px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.resPop .redBagForm .order{
+    padding-top: 36px;
+}
+
+.resPop .order ul li{
+    width: 143px;
+    border: 1px solid #b1b1b1;
+    color: #000;
+    font-size: 16px;
+    background: transparent;
+}
+.resPop .order ul li.active{
+    border-color: #fcce40;
+    background: #fcce40;
+}
+
+.resPop .order input, .resPop .order select{
+    border: 1px solid #b1b1b1;
+}
+.resPop .order select{
+    background-position: 410px center;
+}
+
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: scale(1.05); }
+    to {
+        -webkit-transform: scale(1); } }
+@keyframes scale {
+    from {
+        transform: scale(1.05); }
+    to {
+        transform: scale(1); } }
+@-webkit-keyframes swing {
+    from {
+        -webkit-transform: rotate(10deg); }
+    to {
+        -webkit-transform: rotate(-10deg); } }
+@keyframes swing {
+    from {
+        transform: rotate(10deg); }
+    to {
+        transform: rotate(-10deg); } }
+
+@-webkit-keyframes moveUp {
+    from {
+        margin-top: -3px; }
+    to {
+        margin-top: 0; } }
+@keyframes moveUp {
+    from {
+        margin-top: -3px; }
+    to {
+        margin-top: 0; } }
