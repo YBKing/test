@@ -1216,12 +1216,12 @@ a {
 }
 .bookDetail .illustration li {
   padding-bottom: 0.15rem;
-  -webkit-border-radius: 0.03rem;
-  -moz-border-radius: 0.03rem;
-  border-radius: 0.03rem;
   overflow: hidden;
 }
 .bookDetail .illustration li img {
+  -webkit-border-radius: 0.03rem;
+  -moz-border-radius: 0.03rem;
+  border-radius: 0.03rem;
   width: 100%;
 }
 .bookDetail .journal {
