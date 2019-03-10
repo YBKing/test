@@ -1224,6 +1224,7 @@ a {
   -moz-border-radius: 0.03rem;
   border-radius: 0.03rem;
   width: 100%;
+  vertical-align: middle;
 }
 .bookDetail .journal {
   padding: 0.1rem 0.15rem 0.24rem 0.25rem;
