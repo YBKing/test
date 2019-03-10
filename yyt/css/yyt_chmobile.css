@@ -197,7 +197,6 @@ a {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  overflow: hidden;
 }
 .checkboxModel input {
   position: absolute;
@@ -278,7 +277,7 @@ a {
   height: 0.44rem;
   text-align: center;
 }
-.fixed-bottom-btn [type=rest] {
+.fixed-bottom-btn [type=reset] {
   color: rgba(0, 0, 0, 0.4);
 }
 .fixed-bottom-btn [type=submit] {
@@ -1228,6 +1227,9 @@ a {
 .bookDetail .journal .cover {
   width: 0.9rem;
   max-height: 1.26rem;
+  -webkit-border-radius: 0.03rem;
+  -moz-border-radius: 0.03rem;
+  border-radius: 0.03rem;
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
