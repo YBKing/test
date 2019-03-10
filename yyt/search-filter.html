@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <script src="script/rem.js"></script>
+    <!-- icon css -->
+    <link rel="stylesheet" href="css/iconfont/style.css" type="text/css">
+    <link rel="stylesheet" href="css/yyt_chmobile.css" type="text/css">
+</head>
+<body>
+        <header class="yytHead yytHead-bg-white">
+            <a class="headerLf" href="javascript:;"><i class="back icon-back"></i></a>
+            <div class="flexBox searchBox searchBox-btn">
+                <form class="flexBox_justify-sb">
+                    <div class="inputSearch">
+                        <i class="search icon-search"></i>
+                        <input type="search" value="" placeholder="搜索">
+                        <i class="clear icon-sorting-delete"></i>
+                    </div>
+                    <button class="btn" type="reset">取消</button>
+                </form>
+            </div>
+        </header>
+        <!-- sorting -->
+        <div class="sorting sorting-fix">
+            <span class="mR_20">资源类型</span><span>访问类型</span><span class="fR active">筛选<i class="hourglass icon-hourglass"></i></span>
+        </div>
+
+        <article class="pageArticle pageArticle_bg-white pT_88">
+            <div class="filterBox">
+                <h2>年份</h2>
+                <div class="filterYear">
+                    <span class="slider sliderLt"></span>
+                    <div class="sliderSelected"></div>
+                    <span class="slider sliderRt"></span>
+                </div>
+            </div>
+            <div class="filterBox">
+                <h2>语种</h2>
+                <div class="filterBtn">
+                    <label class="checkboxBtn checked">全部<input type="checkbox" checked></label>
+                    <label class="checkboxBtn">中文<input type="checkbox"></label>
+                    <label class="checkboxBtn">英文<input type="checkbox"></label>
+                    <label class="checkboxBtn">法文<input type="checkbox"></label>
+                </div>
+            </div>
+            <div class="fixed-bottom-btn">
+                <button type="reset">取消</button>
+                <span class="line"></span>
+                <button type="submit">确定</button>
+            </div>
+        </article>
+        <!-- 适配iphoneX -->
+        <div class="fixed-bottom-iphoneX"></div>
+</body>
+</html>
+

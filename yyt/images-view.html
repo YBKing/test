@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>图片浏览</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <script src="script/rem.js"></script>
+    <!-- icon css -->
+    <link rel="stylesheet" href="css/iconfont/style.css" type="text/css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="css/yyt_chmobile.css" type="text/css">
+</head>
+<body>
+    <article class="pageArticle imagesView">
+        <header class="yytHead">
+            <a class="headerLf" href="javascript:;"><i class="back icon-back"></i></a>
+            <h1>东泰加林的人与事</h1>
+        </header>
+        <!-- Swiper -->
+        <div class="swiper-container viewList">
+                <div class="swiper-wrapper viewImg">
+                    <div class="swiper-slide"><img src="images/delete/images.jpg"></div>
+                    <div class="swiper-slide"><img src="images/delete/images.jpg"></div>
+                </div>
+                <!--文字-->
+                <div class="description">
+                    <div class="swiper-container viewText">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-no-swiping">记录了东泰加林驯鹿部落的日常碎片，摄影师在拍摄之外，还用文字记录了不少看不见的表情</div>
+                            <div class="swiper-slide swiper-no-swiping">摄影师在拍摄之外，还用文字记录了不少看不见的表情</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+    </article>
+
+    <script src="script/zepto.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="script/swiper.min.js"></script>
+    <script>
+        var swiperImg = new Swiper('.viewList', {
+        });
+        var swiperText = new Swiper('.viewText', {
+            effect : 'fade',
+            noSwiping : true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            }
+        });
+        swiperImg.controller.control = swiperText;
+
+    </script>
+</body>
+</html>
+

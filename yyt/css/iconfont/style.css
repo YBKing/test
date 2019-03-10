@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'iconfont';
+  src:
+    url('fonts/iconfont.ttf?dvtihq') format('truetype'),
+    url('fonts/iconfont.woff?dvtihq') format('woff'),
+    url('fonts/iconfont.svg?dvtihq#iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e947";
+}
+.icon-epub:before {
+  content: "\e945";
+}
+.icon-pdf:before {
+  content: "\e946";
+}
+.icon-checked:before {
+  content: "\e90c";
+}
+.icon-user-active:before {
+  content: "\e90d";
+}
+.icon-user:before {
+  content: "\e912";
+}
+.icon-bookself-active:before {
+  content: "\e940";
+}
+.icon-bookself:before {
+  content: "\e941";
+}
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-up:before {
+  content: "\e901";
+}
+.icon-audio-next:before {
+  content: "\e902";
+}
+.icon-audio-pre:before {
+  content: "\e903";
+}
+.icon-audiobook:before {
+  content: "\e904";
+}
+.icon-back:before {
+  content: "\e905";
+}
+.icon-bell-notice:before {
+  content: "\e906";
+}
+.icon-bell:before {
+  content: "\e907";
+}
+.icon-book:before {
+  content: "\e908";
+}
+.icon-book2:before {
+  content: "\e909";
+}
+.icon-bookmark:before {
+  content: "\e90a";
+}
+.icon-books:before {
+  content: "\e90b";
+}
+.icon-caret-down:before {
+  content: "\e90e";
+}
+.icon-caret-up:before {
+  content: "\e90f";
+}
+.icon-check:before {
+  content: "\e910";
+}
+.icon-checkbox:before {
+  content: "\e911";
+}
+.icon-class-active:before {
+  content: "\e913";
+}
+.icon-class:before {
+  content: "\e914";
+}
+.icon-clear:before {
+  content: "\e915";
+}
+.icon-cog:before {
+  content: "\e916";
+}
+.icon-collection:before {
+  content: "\e917";
+}
+.icon-Combined-Shape:before {
+  content: "\e918";
+}
+.icon-down-notice:before {
+  content: "\e919";
+}
+.icon-download:before {
+  content: "\e91a";
+}
+.icon-follow:before {
+  content: "\e91b";
+}
+.icon-font-size-sm:before {
+  content: "\e91c";
+}
+.icon-font-size:before {
+  content: "\e91d";
+}
+.icon-headphone:before {
+  content: "\e91e";
+}
+.icon-heart-o:before {
+  content: "\e91f";
+}
+.icon-home-active:before {
+  content: "\e920";
+}
+.icon-home:before {
+  content: "\e921";
+}
+.icon-hourglass:before {
+  content: "\e922";
+}
+.icon-images-2:before {
+  content: "\e923";
+}
+.icon-images:before {
+  content: "\e924";
+}
+.icon-library:before {
+  content: "\e925";
+}
+.icon-light-sm:before {
+  content: "\e926";
+}
+.icon-light:before {
+  content: "\e927";
+}
+.icon-lock:before {
+  content: "\e928";
+}
+.icon-mag-notice:before {
+  content: "\e929";
+}
+.icon-magazine:before {
+  content: "\e92a";
+}
+.icon-menu:before {
+  content: "\e92b";
+}
+.icon-next:before {
+  content: "\e92c";
+}
+.icon-note:before {
+  content: "\e92d";
+}
+.icon-oa:before {
+  content: "\e92e";
+}
+.icon-pause-circle:before {
+  content: "\e92f";
+}
+.icon-pause:before {
+  content: "\e930";
+}
+.icon-pencil:before {
+  content: "\e931";
+}
+.icon-phone:before {
+  content: "\e932";
+}
+.icon-play-circle:before {
+  content: "\e933";
+}
+.icon-play:before {
+  content: "\e934";
+}
+.icon-progress:before {
+  content: "\e935";
+}
+.icon-qq:before {
+  content: "\e936";
+}
+.icon-remove:before {
+  content: "\e937";
+}
+.icon-scan:before {
+  content: "\e938";
+}
+.icon-search:before {
+  content: "\e939";
+}
+.icon-share:before {
+  content: "\e93a";
+}
+.icon-sorting-delete:before {
+  content: "\e93b";
+}
+.icon-star-active:before {
+  content: "\e93c";
+}
+.icon-star:before {
+  content: "\e93d";
+}
+.icon-trash:before {
+  content: "\e93e";
+}
+.icon-unlock:before {
+  content: "\e93f";
+}
+.icon-web:before {
+  content: "\e942";
+}
+.icon-wechat:before {
+  content: "\e943";
+}
+.icon-weibo:before {
+  content: "\e944";
+}
