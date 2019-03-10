@@ -1216,6 +1216,7 @@ a {
 }
 .bookDetail .illustration li {
   break-inside: avoid;
+  column-break-inside: avoid;
   padding-bottom: 0.15rem;
   overflow: hidden;
 }
