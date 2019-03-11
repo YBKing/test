@@ -393,7 +393,41 @@ img {
     display: block;
 }
 .actSecH .actSecCon{
-    padding: 420px 0 0 791px;
+    padding-top: 52px;
+}
+
+.actSecH .actCase{
+    height: 500px;
+}
+.actSecH .actCase .bd li{
+    position: relative;
+}
+
+.actSecH .actCase .bd li a{
+    position: absolute;
+    top: 368px;
+    left: 792px;
+    z-index: 1;
+}
+
+.actSecH .actCase .hd{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+}
+
+.actSecH .actCase .hd li{
+    display: inline-block;
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: #b0b0b0;
+}
+
+.actSecH .actCase .hd li.on{
+    background: #c4442e;
 }
 
 .actSecH a{
@@ -469,10 +503,14 @@ img {
     text-align: center;
 }
 .rightBar a.btn_1{
-    background: #ca3a2d;
+    background: #233f65;
 }
 .rightBar a.btn_3{
     background: #233f65;
+}
+
+.rightBar a:hover{
+    background: #ca3a2d;
 }
 
 .rightBar .redBag {

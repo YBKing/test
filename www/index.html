@@ -164,7 +164,27 @@
     </div>
     <div class="actSecH">
         <div class="actSecCon">
-            <a class="actPopBtn" href="javascript:;">领这套装修方案</a>
+            <div class="actCase">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <img src="images/case_1.jpg">
+                            <a class="actPopBtn" href="javascript:;">领这套装修方案</a>
+                        </li>
+                        <li>
+                            <img src="images/case_2.jpg">
+                            <a class="actPopBtn" href="javascript:;">领这套装修方案</a>
+                        </li>
+                        <li>
+                            <img src="images/case_3.jpg">
+                            <a class="actPopBtn" href="javascript:;">领这套装修方案</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul><li></li><li></li><li></li></ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="actSecI"></div>
@@ -173,30 +193,29 @@
             <div class="didi"><a class="actPopBtn">立即领取</a></div>
             <div class="orderBox">
                 <div class="order">
-                <div class="hd">
-                    <p>已有<span>1242325</span>业主获得服务 并装完了房子</p>
+                    <div class="hd">
+                        <p>已有<span>1242325</span>业主获得服务 并装完了房子</p>
+                    </div>
+                    <form>
+                        <p>
+                            <label for=""><img src="images/city.png" class="城市"></label>
+                            <select id="">
+                                <option>选择房屋所在城市</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for=""><img src="images/user.png" alt="姓名"></label>
+                            <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
+                        </p>
+                        <p>
+                            <label for=""><img src="images/phone.png" alt="联系方式"></label>
+                            <input type="tel" value="" placeholder="联系方式，便于提供0元装修服务">
+                        </p>
+                        <button id="button2">立即领取</button>
+                        <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+                    </form>
                 </div>
-                <form>
-                    <p>
-                        <label for=""><img src="images/city.png" class="城市"></label>
-                        <select id="">
-                            <option>选择房屋所在城市</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for=""><img src="images/user.png" alt="姓名"></label>
-                        <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
-                    </p>
-                    <p>
-                        <label for=""><img src="images/phone.png" alt="联系方式"></label>
-                        <input type="tel" value="" placeholder="联系方式，便于提供0元装修服务">
-                    </p>
-                    <button id="button2">立即领取</button>
-                    <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
-                </form>
             </div>
-            </div>
-            <p class="copyright">爱空间科技（北京）有限公司 版权所有京ICP备15007819号-1</p>
         </div>
     </div>
 </div>
@@ -330,6 +349,13 @@
         });
         //效果图
         $(".actDesigner").slide({
+            mainCell:".bd ul",
+            titCell:".hd ul",
+            effect: "leftLoop",
+            delayTime: "1000",
+            autoPlay: true
+        });
+        $(".actCase").slide({
             mainCell:".bd ul",
             effect: "leftLoop",
             delayTime: "1000",
