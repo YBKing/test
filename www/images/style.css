@@ -1,0 +1,745 @@
+*, *:before, *:after {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px "苹方", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input, button, input[type=text] {
+    border: 0;
+    vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::-moz-placeholder {
+    color: #b0b0b0;
+}
+
+input:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::placeholder {
+    color: #b0b0b0;
+}
+
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*表单*/
+.order .hd {
+    text-align: center;
+    color: #fff;
+}
+
+.order .hd h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.order .hd p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #222;
+}
+.order .hd span {
+    margin: 0 3px;
+    color: #e7391e;
+}
+.order p {
+    position: relative;
+    margin-bottom: 10px;
+}
+.order p label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 52px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.order p img {
+    vertical-align: middle;
+}
+
+.order input, .order select {
+    padding: 10px 20px 10px 52px;
+    width: 100%;
+    height: 55px;
+    line-height: 35px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+}
+
+.order select {
+    background: url("select.png") no-repeat 365px center #fff;
+}
+
+.order button {
+    width: 100%;
+    height: 60px;
+    line-height:60px;
+    color: #fff;
+    font-size: 26px;
+    background: #c4442e;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: inset 1px 0 0 #e3e3e3, 0 2px 0 #e3e3e3;
+}
+
+.order p.tips {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.activityCon {
+    min-width: 1100px;
+}
+
+.actSecCon {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.actBanner .title {
+    display: none;
+}
+
+.activityCon{
+    background: url("bg_01.jpg") no-repeat top center;
+}
+
+.actBanner {
+    height: 738px;
+    background: url("bg_02.jpg") no-repeat center 420px;
+}
+
+.actSecA {
+    height: 812px;
+    background: url("bg_03.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecB {
+    height: 612px;
+    background: url("bg_04.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecC {
+    height: 1113px;
+    background: url("bg_05.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecD {
+    height: 1027px;
+    background: url("bg_06.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecE {
+    height: 876px;
+    background: url("bg_07.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecF {
+    height: 1089px;
+    background: url("bg_08.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecG {
+    height: 1299px;
+    background: url("bg_09.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecH {
+    height: 1141px;
+    background: url("bg_10.jpg") no-repeat top center;
+    overflow: hidden;
+}
+.actSecI {
+    height: 997px;
+    background: url("bg_11.jpg") no-repeat top center;
+    overflow: hidden;
+}
+.actSecJ {
+    height: 1207px;
+    background: url("bg_12.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecA .actSecCon{
+    padding-top: 365px;
+}
+.actSecA .textScollBox{
+    float: left;
+    margin-left: 90px;
+    padding: 50px 0;
+    width: 390px;
+    height: 326px;
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    background: #f0f0f0;
+}
+.actSecA .textScollBox .inner{
+    padding-left: 65px;
+}
+.actSecA .order {
+    float: left;
+    margin-left: 88px;
+    width: 400px;
+}
+
+.actSecC .actSecCon{
+    padding-top: 950px;
+}
+
+.actBtnBox {
+    padding: 40px 0 0 160px;
+}
+
+.actPopBtn-p{
+    float: left;
+    position: relative;
+    margin: 0 0 10px 80px;
+}
+.actPopBtn-p p{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.actPopBtn-p p span{
+    color: #c9402b;
+}
+
+.actBtnBox img {
+    float: left;
+    cursor: pointer;
+}
+
+.actSecD .actSecCon{
+    padding-top: 223px;
+}
+
+.actDesigner,.actExample {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.actDesigner .hd,.actExample .hd {
+    margin-bottom: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.actDesigner .hd ul,.actExample .hd ul {
+    margin-left: -70px;
+}
+
+.actDesigner .hd li,.actExample .hd li {
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    width: 320px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 26px;
+    border-radius: 5px;
+    background: #061a33;
+    color: #5a7291;
+    cursor: pointer;
+}
+
+.actDesigner .hd li.on,.actExample .hd li.on {
+    background: #c9402b;
+    color: #fff;
+}
+.actDesigner .hd li img,.actExample .hd li img{
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 340px;
+}
+.actDesigner .hd li.on .cur,.actDesigner .hd li .normal{
+    display: block;
+}
+
+.actDesigner .bd {
+    margin-bottom: 50px;
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+}
+
+.actExample .bd{
+    height: 500px;
+}
+
+.actSecD .actPopBtn-p,
+.actSecF .actPopBtn-p{
+    color: #fff;
+}
+
+.actSecE .actSecCon {
+    padding-top: 700px;
+}
+
+.actSecF .actSecCon {
+    padding-top: 910px;
+}
+
+.actSecG .actSecCon{
+    padding-top: 525px;
+}
+
+.actSecG .actExample{
+    margin-bottom: 30px;
+}
+
+.actSecG .actExample .hd{
+    height: 85px;
+    overflow: initial;
+}
+.actSecG .actExample .hd ul{
+    margin-left: -10px;
+}
+.actSecG .actExample .hd li{
+    position: relative;
+    margin-left: 10px;
+    width: 360px;
+    color: #fff;
+}
+
+.actSecG .actExample .hd li:after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 12px solid #c9402b;
+}
+
+.actSecG .actExample .hd .on:after{
+    display: block;
+}
+.actSecH .actSecCon{
+    padding: 420px 0 0 791px;
+}
+
+.actSecH a{
+    display: block;
+    width: 245px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    background: #c9402b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.actSecJ .didi{
+    margin-bottom: 185px;
+    height: 240px;
+    padding: 155px 0 0 615px;
+}
+.actSecJ .didi a{
+    display: block;
+    width: 276px;
+    height: 60px;
+    line-height: 58px;
+    border: 1px solid #fff;
+    font-size: 26px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.actSecJ .orderBox{
+    height: 510px;
+    padding: 150px  0 0 568px;
+}
+
+.actSecJ .order{
+    width: 400px;
+}
+
+.copyright {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+.order button, .actPopBtn {
+    cursor: pointer;
+    -webkit-animation: scale 0.4s ease-in-out infinite alternate;
+    animation: scale 0.4s ease-in-out infinite alternate;
+}
+
+.rightBar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    margin: -180px 0 0 580px;
+    width: 100px;
+    height: 300px;
+    background: url("siderbar.png") no-repeat top center;
+}
+
+.rightBar a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background: #1f3a5e;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.rightBar a.btn_1{
+    background: #ca3a2d;
+}
+.rightBar a.btn_3{
+    background: #233f65;
+}
+
+.rightBar .redBag {
+    display: block;
+    margin: 25px auto 0;
+    border-radius: 8px;
+    -webkit-animation: swing 0.3s ease-in-out infinite alternate;
+    animation: swing 0.3s ease-in-out infinite alternate;
+}
+
+.actFixOrder {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+}
+
+.actFixOrder .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.actFixOrder h3 {
+    float: left;
+    padding-top: 18px;
+    font-size: 40px;
+    width: 246px;
+    padding-left: 20px;
+    color: #c9402b;
+    font-weight: normal;
+    text-align: center;
+    line-height: 42px;
+    font-family: PingFangSC-Heavy;
+}
+
+.actFixOrder h3 span {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-family: PingFangSC-Regular;
+}
+
+.actFixOrder .order {
+    position: relative;
+    padding-top: 35px;
+}
+
+.actFixOrder .order input, .actFixOrder .order select {
+    float: left;
+    border: 0;
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 190px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.actFixOrder .order select {
+    background: url("select.png") no-repeat 160px center #fff;
+}
+
+.actFixOrder .order button {
+    width: 190px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    box-shadow: none;
+}
+
+.actFixOrder .order .close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.actFixFold {
+    position: fixed;
+    bottom: 0;
+    right: -280px;
+    z-index: 2;
+    background: url("fix_fold_btn.png") no-repeat;
+    padding-top: 25px;
+    width: 148px;
+    height: 134px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.actFixFold img {
+    text-align: center;
+    -webkit-animation: moveUp 0.3s ease-in-out infinite alternate;
+    animation: moveUp 0.3s ease-in-out infinite alternate;
+}
+
+/*预约弹框*/
+.hdMask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.resPop, .actOrderScu, .actOrderRedScu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 21;
+    margin: -300px 0 0 -250px;
+    width: 500px;
+    height: 500px;
+}
+
+.actOrderScu, .actOrderRedScu {
+    text-align: center;
+}
+
+.actOrderScu .close, .actOrderRedScu .close {
+    margin-top: 20px;
+}
+
+.resPop {
+    background: url("pop_hd.png") no-repeat top center;
+}
+
+.resPop .close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+}
+
+.resPop .head {
+    position: relative;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+    background: url("pop_order_hd.jpg") no-repeat top center;
+}
+
+.resPop .head .money {
+    position: absolute;
+    top: 25px;
+    left: -28px;
+}
+
+.resPop .nomalForm .head {
+    height: 171px;
+    background: url("pop_order_hd_n.jpg") no-repeat top center;
+}
+
+.resPop .order {
+    padding: 20px 24px 32px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.resPop .order .hd{
+    color: #222;
+}
+
+.resPop .redBagForm .order {
+    padding-top: 36px;
+}
+
+.resPop .order ul li {
+    width: 143px;
+    border: 1px solid #b1b1b1;
+    color: #000;
+    font-size: 16px;
+    background: transparent;
+}
+
+.resPop .order ul li.active {
+    border-color: #fcce40;
+    background: #fcce40;
+}
+
+.resPop .order input, .resPop .order select {
+    border: 1px solid #b1b1b1;
+}
+
+.resPop .order select {
+    background-position: 410px center;
+}
+
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: scale(1.05);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes swing {
+    from {
+        -webkit-transform: rotate(10deg);
+    }
+    to {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@keyframes swing {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes moveUp {
+    from {
+        margin-top: -3px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        margin-top: -3px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .rightBar{
+        left: inherit;
+        right: 10px;
+        margin-left: 0;
+    }
+}
