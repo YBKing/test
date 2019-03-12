@@ -70,8 +70,7 @@
         </article>
         <!-- 适配iphoneX -->
         <div class="fixed-bottom-iphoneX"></div>
-
-        <!--<script src="script/wNumb.js"></script>-->
+        <script src="script/wNumb.js"></script>
         <script src="script/nouislider.js"></script>
         <script>
             var stepSlider = document.getElementById('slider-step');
@@ -80,24 +79,24 @@
                 start: [1800, 2019],
                 step: 1,
                 behaviour: 'drag',
+                decimals: 1,
                 connect: true,
-                // tooltips: [false, wNumb({decimals: 0}), true],
+                tooltips: true,
                 range: {
                     'min': 1800,
                     'max': 2019
-                }
+                },
+                format: wNumb({
+                    decimals: false
+                })
             });
 
-            /*var paddingMin = document.getElementById('slider-margin-value-min');
-            var paddingMax = document.getElementById('slider-margin-value-max');
+            //设置年份
+            stepSlider.noUiSlider.set([1980,2008]);
+            //获取年份
+            // stepSlider.noUiSlider.get();
 
-            stepSlider.noUiSlider.on('update', function (values, handle) {
-                if (handle) {
-                    paddingMax.innerHTML = values[handle];
-                } else {
-                    paddingMin.innerHTML = values[handle];
-                }
-            });*/
+            // nouislider API 地址 https://refreshless.com/nouislider/reference/
         </script>
 </body>
 </html>
