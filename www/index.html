@@ -93,23 +93,12 @@
         function play() {
             var playImg = $("#video").find("img");
             if(video.paused){
-                playImg.css({
-                    "z-index" : 0,
-                    "opacity" : 0
-                });
                 video.play();
             }else{
-                playImg.css({
-                    "z-index" : 1,
-                    "opacity" : 1
-                });
                 video.pause();
             }
             video.addEventListener('ended', function () {
-                playImg.css({
-                    "z-index" : 1,
-                    "opacity" : 1
-                });
+                video.pause();
             })
         };
         $("#video").click(function () {
@@ -120,8 +109,7 @@
             video.pause();
             var index = $(this).parent().index();
             video.src=videos[index];
-            video.poster=posters[index];
-            // video.src(videos[index]);
+            $('#video').find("video").attr("poster",posters[index]);
             video.load();
             $('.videoMenu li').removeClass("active");
             $(this).parent().addClass("active");
