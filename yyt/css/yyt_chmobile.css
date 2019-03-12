@@ -828,6 +828,9 @@ a {
 .filterBox {
   padding: 0.05rem 0.3rem 0.2rem;
 }
+.filterBox .filterYearBox {
+  padding: 0 0.09rem;
+}
 .filterBox h2 {
   height: 0.25rem;
   line-height: 0.25rem;
@@ -927,6 +930,35 @@ a {
 }
 .filterBox:first-child {
   margin-top: 0.05rem;
+}
+/*range css init*/
+.noUi-base {
+  height: 0.04rem;
+  background: #E0E1E3;
+}
+.noUi-draggable {
+  background: #F26E51;
+}
+.noUi-target {
+  border: 0;
+}
+.noUi-handle {
+  top: -0.07rem !important;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  width: 0.18rem !important;
+  height: 0.18rem !important;
+  background: #fff;
+  border: 0.02rem solid #F26E51;
+}
+.noUi-handle:before,
+.noUi-handle:after {
+  display: none;
+}
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+  right: -0.09rem;
+  left: auto;
 }
 /*登陆/注册*/
 .userForm {
@@ -1501,14 +1533,17 @@ a {
   color: rgba(0, 0, 0, 0.4);
   font-size: 0.16rem;
 }
+.journals .year ul {
+  display: none;
+}
 .journals .year .yearNum {
   padding-right: 0.2rem;
   height: 0.5rem;
   line-height: 0.5rem;
   border-bottom: 0.01rem solid #F7F9FA;
 }
-.journals .year ul {
-  display: none;
+.journals .year .yearNum.on + ul {
+  display: block;
 }
 .journals .year li a {
   display: flex;
@@ -1518,9 +1553,6 @@ a {
   line-height: 0.4rem;
   justify-content: space-between;
   align-items: center;
-}
-.journals .year.on ul {
-  display: block;
 }
 .journalAndSearch {
   text-align: center;
@@ -1623,7 +1655,8 @@ a {
   text-align: center;
 }
 .bookLstSection ul .cover {
-  margin-bottom: 0.07rem;
+  margin: 0 auto 0.07rem;
+  max-width: 0.9rem;
   height: 1.26rem;
   -webkit-border-radius: 0.02rem;
   -moz-border-radius: 0.02rem;

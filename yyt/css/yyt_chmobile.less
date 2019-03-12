@@ -118,6 +118,9 @@
 }
 .filterBox{
   padding: 0.05rem 0.3rem 0.2rem;
+  .filterYearBox{
+    padding: 0 0.09rem;
+  }
   h2{
     height: 0.25rem;
     line-height: 0.25rem;
@@ -210,6 +213,32 @@
   &:first-child{
     margin-top: 0.05rem;
   }
+}
+/*range css init*/
+.noUi-base{
+  height: 0.04rem;
+  background: #E0E1E3;
+}
+.noUi-draggable{
+  background: @orange;
+}
+.noUi-target{
+  border: 0;
+}
+.noUi-handle{
+  top: -0.07rem !important;
+  .border-radius(100%);
+  width: 0.18rem !important;
+  height: 0.18rem !important;
+  background: @white;
+  border: 0.02rem solid #F26E51;
+  &:before,&:after{
+    display: none;
+  }
+}
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle{
+  right: -0.09rem;
+  left: auto;
 }
 /*登陆/注册*/
 .userForm{
@@ -764,14 +793,17 @@
       color: @grayLight;
       font-size: 0.16rem;
     }
+    ul{
+      display: none;
+    }
     .yearNum{
       padding-right: 0.2rem;
       height: 0.5rem;
       line-height: 0.5rem;
       border-bottom: 0.01rem solid #F7F9FA;
-    }
-    ul{
-      display: none;
+      &.on + ul{
+        display: block;
+      }
     }
     li{
       a{
@@ -782,11 +814,6 @@
         line-height: 0.4rem;
         justify-content: space-between;
         align-items: center;
-      }
-    }
-    &.on{
-      ul{
-        display: block;
       }
     }
   }
@@ -884,7 +911,8 @@
     padding: 0 0.11rem;
     text-align: center;
     .cover{
-      margin-bottom: 0.07rem;
+      margin: 0 auto 0.07rem;
+      max-width: 0.9rem;
       height: 1.26rem;
       .border-radius(0.02rem);
       .box-shadow(0,5px,8px,rgba(@blank,0.1));

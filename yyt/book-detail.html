@@ -149,8 +149,7 @@
     <!-- 适配iphoneX -->
     <div class="fixed-bottom-iphoneX"></div>
     <script src="script/zepto.min.js"></script>
-    <script src="script/fx.js"></script>
-    <script src="script/fx_methods.js"></script>
+    <script src="script/book.detail.js"></script>
     <script src="script/swiper.min.js"></script>
     <script>
             var swiper = new Swiper('.swiper-container', {
@@ -158,23 +157,6 @@
                 spaceBetween: 0,
                 freeMode: true
             });
-            //显示更多
-            $("[data-toggle]").click(function () {
-                var els = $(this).data("toggle");
-                $(this).hide();
-                $("#" + els).css({
-                    "height": "auto"
-                });
-            });
-            //目录
-            $("[data-menu]").click(function () {
-                var menu = $(this).data("menu");
-                $("#" + menu).toggle();
-                $("#" + menu).find(".chapter").removeClass("on");
-            });
-            $(".chapter").click(function () {
-                $(this).toggleClass("on");
-            })
     </script>
 </body>
 </html>

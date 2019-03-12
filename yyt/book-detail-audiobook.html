@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="summary">
-            <div class="text">
+            <div id="moreText" class="text">
                 <p>“我的生活就是一个帐篷，每年拆拆搬搬很多次。”</p>
                 <p>Saintsetseg Jambaldorj是这样描述她的生活的。Orts是查坦人居住的帐篷，用木棍和帆布就能搭建而成，可以随意拆除和转移位置。</p>
                 <p>查坦人是蒙古国的驯鹿游牧民族，他们根据季节的变换以及动物对天气和食物的适应条件在针叶林里游牧生活。</p>
@@ -44,7 +44,7 @@
                 <p>我感觉到她在关注着我，但当我准备回应她时，她卻迅速地避开了我的目光，但她随后还是会继续看着我，而我就当作并没有在意。</p>
                 <p>我真的很想拍下她看着我时好奇的样子。在给她拍摄时，她穿了一件深绿色的蒙古服装，和她泛红的脸庞，相互辉映。</p>
             </div>
-            <a class="unfold"><i class="icon-arrow-down"></i></a>
+            <a data-toggle="moreText" class="unfold"><i class="icon-arrow-down"></i></a>
         </div>
         <!--期号-->
         <div class="groupModel bookMenu">
@@ -153,6 +153,8 @@
     </div>
     <!-- 适配iphoneX -->
     <div class="fixed-bottom-iphoneX"></div>
+    <script src="script/zepto.min.js"></script>
+    <script src="script/book.detail.js"></script>
     <script src="script/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {

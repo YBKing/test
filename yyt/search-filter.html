@@ -13,6 +13,7 @@
     <script src="script/rem.js"></script>
     <!-- icon css -->
     <link rel="stylesheet" href="css/iconfont/style.css" type="text/css">
+    <link rel="stylesheet" href="css/nouislider.css" type="text/css">
     <link rel="stylesheet" href="css/yyt_chmobile.css" type="text/css">
 </head>
 <body>
@@ -37,12 +38,19 @@
         <article class="pageArticle pageArticle_bg-white pT_88">
             <div class="filterBox">
                 <h2>年份</h2>
-                <div class="filterYear">
-                    <span class="slider sliderLt"></span>
-                    <div class="sliderSelected"></div>
-                    <span class="slider sliderRt"></span>
-                    <span class="num numMin">1990</span>
-                    <span class="num numMax">2019</span>
+                <div class="filterYearBox">
+                    <!--<div class="filterYear">-->
+                        <!--<span class="slider sliderLt"></span>-->
+                        <!--<div class="sliderSelected"></div>-->
+                        <!--<span class="slider sliderRt"></span>-->
+                        <!--<span class="num numMin">1990</span>-->
+                        <!--<span class="num numMax">2019</span>-->
+                    <!--</div>-->
+                    <div class="filterYear" id="slider-step">
+                            <!--<div id="slider-margin-value-min" class="num numMin example-val">-->
+                        <!--</div>-->
+                            <!--<div id="slider-margin-value-max" class="num numMax example-val"></div>-->
+                    </div>
                 </div>
             </div>
             <div class="filterBox">
@@ -62,6 +70,35 @@
         </article>
         <!-- 适配iphoneX -->
         <div class="fixed-bottom-iphoneX"></div>
+
+        <!--<script src="script/wNumb.js"></script>-->
+        <script src="script/nouislider.js"></script>
+        <script>
+            var stepSlider = document.getElementById('slider-step');
+
+            noUiSlider.create(stepSlider, {
+                start: [1800, 2019],
+                step: 1,
+                behaviour: 'drag',
+                connect: true,
+                // tooltips: [false, wNumb({decimals: 0}), true],
+                range: {
+                    'min': 1800,
+                    'max': 2019
+                }
+            });
+
+            /*var paddingMin = document.getElementById('slider-margin-value-min');
+            var paddingMax = document.getElementById('slider-margin-value-max');
+
+            stepSlider.noUiSlider.on('update', function (values, handle) {
+                if (handle) {
+                    paddingMax.innerHTML = values[handle];
+                } else {
+                    paddingMin.innerHTML = values[handle];
+                }
+            });*/
+        </script>
 </body>
 </html>
 
