@@ -134,6 +134,7 @@
     height: 0.04rem;
     .border-radius(0.03rem);
     background: #E0E1E3;
+    font-size: 0.14rem;
     .sliderSelected{
       position: absolute;
       left: 0;
@@ -158,6 +159,40 @@
       }
       &Rt{
         right: 0;
+      }
+    }
+    .num{
+      display: block;
+      position: absolute;
+      top: -0.35rem;
+      left: 0;
+      z-index: 1;
+      .border-radius(0.02rem);
+      margin-left: -0.15rem;
+      width: 0.48rem;
+      height: 0.22rem;
+      line-height: 0.22rem;
+      color: @white;
+      background: @orange;
+      text-align: center;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -0.08rem;
+        margin-left: -0.05rem;
+        width: 0;
+        height: 0;
+        border: 0.05rem solid transparent;
+        border-top: 0.04rem solid @orange;
+      }
+      &Min{
+        left: 0;
+      }
+      &Max{
+        margin-left: -0.33rem;
+        left: 100%;
       }
     }
   }
@@ -906,6 +941,7 @@
       .swiper-slide{
         height: 2.66rem;
         line-height: 2.66rem;
+        text-align: center;
         img{
           vertical-align: middle;
         }

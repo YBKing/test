@@ -846,6 +846,7 @@ a {
   -moz-border-radius: 0.03rem;
   border-radius: 0.03rem;
   background: #E0E1E3;
+  font-size: 0.14rem;
 }
 .filterBox .filterYear .sliderSelected {
   position: absolute;
@@ -876,6 +877,42 @@ a {
 }
 .filterBox .filterYear .sliderRt {
   right: 0;
+}
+.filterBox .filterYear .num {
+  display: block;
+  position: absolute;
+  top: -0.35rem;
+  left: 0;
+  z-index: 1;
+  -webkit-border-radius: 0.02rem;
+  -moz-border-radius: 0.02rem;
+  border-radius: 0.02rem;
+  margin-left: -0.15rem;
+  width: 0.48rem;
+  height: 0.22rem;
+  line-height: 0.22rem;
+  color: #fff;
+  background: #F26E51;
+  text-align: center;
+}
+.filterBox .filterYear .num:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -0.08rem;
+  margin-left: -0.05rem;
+  width: 0;
+  height: 0;
+  border: 0.05rem solid transparent;
+  border-top: 0.04rem solid #F26E51;
+}
+.filterBox .filterYear .numMin {
+  left: 0;
+}
+.filterBox .filterYear .numMax {
+  margin-left: -0.33rem;
+  left: 100%;
 }
 .filterBox .filterBtn {
   margin: 0.08rem 0 0 -0.1rem;
@@ -1648,6 +1685,7 @@ a {
 .imagesView .viewList .viewImg .swiper-slide {
   height: 2.66rem;
   line-height: 2.66rem;
+  text-align: center;
 }
 .imagesView .viewList .viewImg .swiper-slide img {
   vertical-align: middle;
