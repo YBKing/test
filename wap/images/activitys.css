@@ -322,6 +322,9 @@ select {
 .actBwz {
   padding-top: 28%;
 }
+.actXgzz {
+  background: #ededed;
+}
 .actXgzz .thumberTab li {
   padding-top: 0;
   line-height: 2.85714286rem;
@@ -423,7 +426,7 @@ select {
   width: 1.07142857rem;
 }
 .copyright {
-  padding: 0 0 7.14285714rem;
+  padding: 0 0 4.28571429rem;
   text-align: center;
   font-size: 0.57142857rem;
   color: #ddd;
