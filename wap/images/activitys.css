@@ -135,7 +135,7 @@ select {
   border-radius: 0.5rem;
 }
 .actCon {
-  background: #fff;
+  background: #ededed;
 }
 .actFlow {
   position: relative;
@@ -231,7 +231,7 @@ select {
   margin: 0 3.2% 2.5rem;
   padding: 0.35714286rem 1.60714286rem 2rem;
   background: #fff;
-  box-shadow: 0 -2px 0 #e3e3e3;
+  box-shadow: 0 2px 0 #e3e3e3;
 }
 .orderTop .shadow {
   position: absolute;
@@ -328,6 +328,9 @@ select {
 .actXgzz .thumberTab li {
   padding-top: 0;
   line-height: 2.85714286rem;
+}
+.actGjz {
+  background: #ededed;
 }
 .actDesignerBox {
   padding: 0 3.2%;
