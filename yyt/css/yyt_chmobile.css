@@ -1223,6 +1223,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-bottom: 0.05rem;
   padding: 0.1rem 0.25rem 0.15rem;
   background: #fff;
+  transition: all 0.5s;
 }
 .bookDetail .summary h3 {
   height: 0.4rem;
@@ -1238,9 +1239,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 0.16rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
 }
 .bookDetail .summary .unfold .icon-arrow-down {
   font-size: 0.16rem;
+}
+.bookDetail .summary .unfold.fold {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .bookDetail .illustration ul {
   padding: 0.2rem 0.25rem 0.6rem;

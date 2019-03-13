@@ -1,10 +1,15 @@
 //摘要显示更多
 $("[data-toggle]").click(function () {
     var els = $(this).data("toggle");
-    $(this).hide();
-    $("#" + els).css({
-        "height": "auto"
-    });
+    if($(this).hasClass("fold")){
+        $(this).removeClass("fold");
+        $("#" + els).removeAttr("style");
+    }else{
+        $(this).addClass("fold");
+        $("#" + els).css({
+            "height": "auto"
+        });
+    }
 });
 //目录收缩/展开
 $("[data-menu]").click(function () {
