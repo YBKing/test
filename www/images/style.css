@@ -1,0 +1,583 @@
+body {
+  font: 16px PingFangSC-Regular, "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, sans-serif;
+  background: #fff;
+  color: #222;
+}
+/*表单*/
+.order p {
+  position: relative;
+  margin-bottom: 10px;
+}
+.order p label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 52px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+.order .hd {
+  text-align: center;
+  color: #fff;
+}
+.order .hd h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.order .hd p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #222;
+}
+.order .hd span {
+  margin: 0 3px;
+  color: #e7391e;
+}
+.order input,
+.order select {
+  padding: 10px 20px 10px 52px;
+  width: 100%;
+  height: 55px;
+  line-height: 35px;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #b1b1b1;
+}
+.order select {
+  background: url("select.png") no-repeat 365px center #fff;
+}
+.order button {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 26px;
+  background: #c4442e;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.order .tips {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.activityCon {
+  min-width: 1100px;
+}
+.actSecCon {
+  position: relative;
+  z-index: 1;
+  width: 1100px;
+  margin: 0 auto;
+}
+.actBanner {
+  padding-top: 90px;
+  height: 729px;
+  background: url("bg_01.jpg") no-repeat top center;
+}
+.actBanner .order {
+  margin-left: 715px;
+  padding-bottom: 30px;
+  width: 424px;
+  background: #fff;
+}
+.actBanner .order h1 {
+  height: 66px;
+  line-height: 66px;
+  font-size: 26px;
+  text-align: center;
+  background: #f1f1f1;
+  font-weight: normal;
+}
+.actBanner .order .number {
+  height: 57px;
+  line-height: 57px;
+  font-size: 16px;
+  text-align: center;
+}
+.actBanner .order .number span {
+  color: #f02f03;
+}
+.actBanner .order p {
+  margin: 0 auto 10px;
+  border: 1px solid #b4b3b3;
+  width: 370px;
+  overflow: hidden;
+}
+.actBanner .order p label {
+  display: block;
+  float: left;
+  line-height: 53px;
+  border-right: 1px solid #b4b3b3;
+  width: 93px;
+  text-align: center;
+  font-size: 18px;
+}
+.actBanner .order p input,
+.actBanner .order p select {
+  border: 0;
+  float: right;
+  width: 275px;
+  height: 53px;
+  padding: 10px;
+  line-height: 33px;
+  font-size: 16px;
+}
+.actBanner .order p select {
+  background: url("select.png") no-repeat 245px center;
+}
+.actBanner .order button {
+  display: block;
+  margin: 0 auto;
+  width: 371px;
+  height: 65px;
+  background: url("button.png") no-repeat 0 0;
+}
+.actBanner .logo {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.actSecA {
+  height: 1569px;
+  background: url("bg_02.jpg") no-repeat top center;
+  text-align: center;
+}
+.actSecA .fourStep {
+  position: relative;
+}
+.actSecA .fourStep .step {
+  margin-top: -140px;
+}
+.actSecA .fourStep .btn {
+  position: absolute;
+  left: 50%;
+  top: 230px;
+  z-index: 1;
+  margin-left: -200px;
+}
+.actSecA .pk .tit {
+  margin: 64px 0 15px;
+}
+.actSecB {
+  height: 912px;
+  padding-top: 95px;
+  text-align: center;
+  background: url("bg_03.jpg") no-repeat top center;
+}
+.actSecB .tit {
+  margin-bottom: 60px;
+}
+.actSecB .actSecCon {
+  position: relative;
+}
+.actSecB .actSecCon .actBtmBtn {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.actSecC {
+  height: 1560px;
+  padding-top: 340px;
+  background: url("bg_04.jpg") no-repeat top center;
+  text-align: center;
+}
+.actSecC p {
+  font-size: 26px;
+}
+.actSecC p span {
+  color: #f52d05;
+}
+.actSecC ul {
+  margin: 60px 0 0 -20px;
+}
+.actSecC ul li {
+  position: relative;
+  float: left;
+  margin: 0 0 65px 20px;
+}
+.actSecC ul li .btn {
+  position: absolute;
+  left: 50%;
+  bottom: -23px;
+  z-index: 1;
+  margin-left: -123px;
+}
+.actSecD {
+  padding-top: 145px;
+  height: 370px;
+  background: url("bg_05.jpg") no-repeat top center;
+}
+.actSecD .order {
+  margin: 0 auto;
+  width: 934px;
+}
+.actSecD .order p {
+  float: left;
+  margin: 0 5px;
+  width: 300px;
+  overflow: hidden;
+}
+.actSecD .order p input,
+.actSecD .order p select {
+  height: 60px;
+  border: 0;
+}
+.actSecD .order .smtBtn {
+  float: left;
+  margin: 35px 0 0 265px;
+  width: 400px;
+  height: 78px;
+  background: url("btn_5.png") no-repeat top center;
+}
+.actSecE {
+  padding-top: 50px;
+  height: 1543px;
+  background: url("bg_06.jpg") no-repeat top center;
+  text-align: center;
+}
+.actSecE .tit {
+  margin-bottom: 210px;
+}
+.actSecE .actPower .hd {
+  height: 94px;
+}
+.actSecE .actPower .hd ul {
+  margin-left: -10px;
+  font-family: PingFangSC-bold;
+}
+.actSecE .actPower .hd li {
+  float: left;
+  margin-left: 10px;
+  width: 360px;
+}
+.actSecE .actPower .hd li span {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  height: 86px;
+  line-height: 86px;
+  color: #333;
+  font-size: 28px;
+  background: #fff;
+  transition: all 0.2s;
+}
+.actSecE .actPower .hd li.on span {
+  margin-top: 0;
+  background: #ffa735;
+  color: #fff;
+  height: 94px;
+  line-height: 94px;
+}
+.actSecE .copyright {
+  margin-top: 60px;
+  color: #d3d3d3;
+  font-size: 14px;
+}
+.actBtmBtn {
+  padding-top: 70px;
+  text-align: center;
+}
+.actBtmBtn img {
+  margin: 0 30px;
+}
+.actFixOrder {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 120px;
+}
+.actFixOrder .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.actFixOrder .tit {
+  float: left;
+  margin: 20px 45px 0 20px;
+}
+.actFixOrder .order {
+  position: relative;
+  padding-top: 35px;
+}
+.actFixOrder .order input,
+.actFixOrder .order select {
+  float: left;
+  border: 0;
+  padding: 10px 20px;
+  margin-right: 10px;
+  width: 190px;
+  height: 55px;
+  line-height: 35px;
+  font-size: 18px;
+  background: #fff;
+}
+.actFixOrder .order select {
+  background: url("select.png") no-repeat 160px center #fff;
+}
+.actFixOrder .order button {
+  width: 190px;
+  height: 55px;
+  font-size: 20px;
+  line-height: 55px;
+  color: #222;
+  background: #ffa735;
+}
+.actFixOrder .order .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.actFixFold {
+  position: fixed;
+  bottom: 0;
+  right: -280px;
+  z-index: 2;
+  background: url("fix_unfold.png") no-repeat;
+  padding-top: 25px;
+  width: 148px;
+  height: 134px;
+  cursor: pointer;
+  text-align: center;
+}
+.actFixFold img {
+  text-align: center;
+  -webkit-animation: moveUp 0.3s ease-in-out infinite alternate;
+  animation: moveUp 0.3s ease-in-out infinite alternate;
+}
+/*预约弹框*/
+.hdMask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: #000;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+.resPop,
+.actOrderScu,
+.actOrderRedScu {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 21;
+  margin: -300px 0 0 -250px;
+  width: 500px;
+  height: 500px;
+}
+.actOrderScu .close,
+.actOrderRedScu .close {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  cursor: pointer;
+}
+.resPop .close {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  cursor: pointer;
+  width: 31px;
+  height: 31px;
+}
+.resPop .order {
+  padding: 20px 24px 32px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+.resPop .order .hd {
+  color: #222;
+}
+.resPop .order .calculator {
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  line-height: 60px;
+  text-align: right;
+  font-size: 40px;
+  font-family: Arial;
+  color: #fff;
+  background: #444;
+  box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.43);
+}
+.resPop .order input,
+.resPop .order select {
+  border: 1px solid #b1b1b1;
+}
+.resPop .order select {
+  background-position: 410px center;
+}
+.resPop .redBagForm .tit {
+  display: block;
+  position: relative;
+  height: 160px;
+  border-radius: 10px 10px 0 0;
+  overflow: initial !important;
+  background: url("pop_order_hd.jpg") no-repeat top center;
+}
+.resPop .redBagForm .tit .money {
+  position: absolute;
+  top: 25px;
+  left: -28px;
+}
+.resPop .redBagForm button {
+  box-shadow: 0 2px 0 #e3e3e3;
+}
+.resPop .redBagForm order {
+  padding-top: 30px;
+}
+.resPop .nomalForm .tit {
+  padding-top: 35px;
+  height: 123px;
+  background: #ff8d27;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  border-radius: 10px 10px 0 0;
+}
+.resPop .nomalForm h2 {
+  font-size: 26px;
+  font-weight: normal;
+}
+.resPop .nomalForm p span {
+  margin: 0 3px;
+}
+.resPop .nomalForm input,
+.resPop .nomalForm select {
+  background-color: #f5f5f5;
+}
+.resPop .nomalForm button {
+  background: #ea3612;
+}
+.order button,
+.actPopBtn {
+  cursor: pointer;
+  -webkit-animation: scale 0.4s ease-in-out infinite alternate;
+  animation: scale 0.4s ease-in-out infinite alternate;
+}
+.rightBar {
+  position: fixed;
+  bottom: 200px;
+  left: 50%;
+  z-index: 2;
+  margin: -180px 0 0 600px;
+  width: 100px;
+}
+.rightBar a {
+  display: block;
+}
+.rightBar a.link {
+  margin-top: 1px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background: #f65016;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.rightBar a.link:hover {
+  background: #ea3612;
+}
+.rightBar a.consultBtn {
+  margin-top: 1px;
+}
+.rightBar .redBag {
+  display: block;
+  margin: 25px auto 0;
+  border-radius: 8px;
+  -webkit-animation: swing 0.3s ease-in-out infinite alternate;
+  animation: swing 0.3s ease-in-out infinite alternate;
+}
+.actPopBtn {
+  cursor: pointer;
+  -webkit-animation: scale 0.4s ease-in-out infinite alternate;
+  animation: scale 0.4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes swing {
+  from {
+    -webkit-transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+  }
+}
+@keyframes swing {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+@-webkit-keyframes moveUp {
+  from {
+    margin-top: -3px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@keyframes moveUp {
+  from {
+    margin-top: -3px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .rightBar {
+    left: inherit;
+    right: 10px;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
