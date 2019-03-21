@@ -116,16 +116,7 @@ button {
 .actCon .sectionD ul li p a {
   margin: -1.4285714286rem auto;
   display: block;
-  width: 89.5%;
-  height: 2.7857142857rem;
-  line-height: 2.7857142857rem;
-  background: #e51b12;
-  color: #fff;
-  font-size: 0.9285714286rem;
-  border-radius: 1.3571428571rem;
-  background-image: -moz-linear-gradient(top, #f41f1b, #de0a0a);
-  background-image: -webkit-linear-gradient(top, #f41f1b, #de0a0a);
-  box-shadow: 0 0.2857142857rem 0 #a70e07; }
+  width: 89.5%; }
 .actCon .sectionE .actTitle {
   display: block;
   position: relative;

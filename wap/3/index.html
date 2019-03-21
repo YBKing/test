@@ -91,7 +91,7 @@
 </div>
 
 <!--吸底浮层-->
-<div class="btnFixBottom"><a href=""javascript:soCall();">立即咨询  0元领方案</a></div>
+<div class="btnFixBottom"><a href="javascript:soCall();">立即咨询  0元领方案</a></div>
 <script type="text/javascript">
     //在线客服
     function soCall(){
@@ -173,13 +173,6 @@
             var index = $(this).index();
             $(this).addClass("active").siblings().removeClass("active");
             upTwoSwiper.slideTo(index+1, 1000, false);
-        });
-        var downSwiperTwo = new Swiper('.downSwiperTwo', {
-            autoplay: 3000,
-            loop : true,
-            autoplayDisableOnInteraction : false,
-            prevButton:'.downPrev',
-            nextButton:'.downNext'
         });
     })
 </script>
