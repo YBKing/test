@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{ color: #222; background: #fff;}
+body{ max-width: 640px;  color: #222; background: #fff;}
 img{ max-width: 100%; vertical-align: middle;}
 i,strong{ font-style: normal; font-weight: normal;}
 body>img:last-of-type{ display: none;}
