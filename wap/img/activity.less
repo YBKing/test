@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+html,body,div,p,form,input,button,select,img{ margin:0; padding:0; border: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{ font-size: 62.5%; width: 100%; height: 100%; font-family:Helvetica;}
+body { max-width: 750px; margin:0px auto; height: 100%; font-family:Helvetica; font-size:1rem; color: #333; background: #f1f1f1;}
+@media screen and (max-width:320px){html{font-size:12px}}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:14px}}
+@media screen and (min-width:376px) and (max-width:500px){html{font-size:16px}}
+@media screen and (min-width:501px) and (max-width:600px){html{font-size:18px}}
+@media screen and (min-width:601px){html{font-size:24px}}
+a{text-decoration:none;}
+i,strong,em{ font-weight: normal; font-style: normal;}
+img{ border:0; max-width: 100%; vertical-align: middle;}
+body>img:last-of-type{ display: none;}
+
+:-moz-placeholder{ color: #CDCFD0; font-size: 1rem;}
+::-webkit-input-placeholder{ color: #CDCFD0; font-size: 1rem;}
+:-ms-input-placeholder{ color: #CDCFD0; font-size: 1rem;}
+::placeholder{ color: #CDCFD0; font-size: 1rem;}
+
+/*去掉苹果设备input_CSS样式*/
+input,button,select{ -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family:Helvetica; outline: none;}
+input[type=radio]{ position: absolute; top:0; left: 0; z-index: -1; visibility: hidden; opacity: 0;}
+
+.actCon{ position: relative; height: 100%; background: #f1f1f1;}
+
+.errorTips {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin-top: -3rem;
+  font-size: 1.143rem;
+  color: #fff;
+  z-index: 100;
+  text-align: center;
+}
+
+.errorTips p {
+  display: inline-block;
+  min-height: 3rem;
+  line-height: 2rem;
+  max-width: 580px;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 0.5rem;
+}
+.actFlow {
+  position: relative;
+}
+
+.actFlowBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.order{
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: (5/14rem);
+  .hd{
+    text-align: center;
+    font-size: (12/14rem);
+    span{
+      color: #d73a22;
+      margin: 0 (3/14rem);
+    }
+  }
+  p{
+    position: relative;
+    margin: 0 0 (10/14rem);
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      left: (46/14rem);
+      top: (11/14rem);
+      z-index: 0;
+      width: 1px;
+      height: (25/14rem);
+      background: rgba(#666,0.3);
+    }
+  }
+  input,select{
+    padding: (10/14rem) (10/14rem) (10/14rem) (40/14rem);
+    width: 100%;
+    height: (44/14rem);
+    border-radius: (2.5/14rem);
+    font-size: 1rem;
+    color: #222;
+    border: 0;
+  }
+  select{
+    background: url("city.png") no-repeat (14.5/14rem) center /(16/14rem),url("select.png") no-repeat right center / (13/14rem) #efefef;
+    background-origin: border-box,content-box;
+    -webkit-background-origin: border-box,content-box;
+    line-height: 1;
+    &:disabled{
+      background: url("city.png") no-repeat (14.5/14rem) center /(16/14rem) #efefef;
+      background-origin: border-box;
+      -webkit-background-origin: border-box;
+    }
+  }
+  i{
+    position: absolute;
+    top:0;
+    right: (10/14rem);
+    display: block;
+    line-height: (45/14rem);
+  }
+  .area{
+    background: url("area.png") no-repeat (12.5/14rem) center /(20.5/14rem) #efefef;
+  }
+  .user{
+    background: url("user.png") no-repeat (13/14rem) center / (19/14rem) #efefef;
+  }
+  .phone{
+    background: url("phone.png") no-repeat (14.5/14rem) center /1rem #efefef;
+  }
+  button{
+    display: block;
+    width: 100%;
+    height: (45/14rem);
+    border-radius: (2.5/14rem);
+    color: #fff;
+    font-size: (18/14rem);
+    font-weight: bold;
+    background: #ff670c;
+  }
+  .tips {
+    margin-top: (10/14rem);
+    color: #999;
+    font-size: (10/14rem);
+    text-align: center;
+  }
+  &.topOrder{
+    margin: -(40/14rem) (15/14rem) (20/14rem);
+    padding: (15/14rem) (20/14rem) (27/14rem);
+    background: #fff;
+    border-radius: (10/14rem);
+    overflow: hidden;
+    .jsq{
+      padding-right: (10/14rem);
+      height: (60/14rem);
+      line-height: (60/14rem);
+      background: #4d4d4d;
+      text-align: right;
+      border-radius: (2.5/14rem);
+      img{
+        height: (33/14rem);
+      }
+    }
+    p{
+      &:before{
+        left: (43/14rem);
+      }
+      &:first-of-type{
+        margin-top: (15/14rem);
+      }
+      input,select {
+        padding-left: (55/14rem);
+        border-radius: (2.5/14rem);
+      }
+    }
+  }
+}
+
+.styleImg,.sixCroe{ padding: 0 (15/14rem) 0 (5/14rem); overflow: hidden;}
+.styleImg li,.sixCroe li{ float: left; width: 50%; margin-bottom: (10/14rem); padding-left: (10/14rem);}
+.sixCroe li img{ border-radius: (10/14rem); box-shadow: 0 (5/14rem) (10/14rem) rgba(102,102,102,0.05);}
+
+.copyRight{ margin: (10/14rem) auto (25/14rem); text-align: center; color: #848281; text-align: center; font-size: 0.714rem;}

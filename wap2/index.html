@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0元领取全屋设计方案</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="http://m.ikongjian.com/assets/2017/css/css.css">
+    <link type="text/css" rel="stylesheet" href="images/activitys.css">
+    <script type="text/javascript" src="http://m.ikongjian.com/assets/2017/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://m.ikongjian.com/assets/2017/js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://m.ikongjian.com/assets/2017/js/function.js"></script>
+</head>
+<body>
+<div class="actCon">
+    <img src="images/banner.jpg" />
+    <div class="bg_wrapper1" id="orderOffset">
+        <div class="bg_inner_wrapper">
+            <img src="images/bg_01.png" />
+            <div class="order topOrder">
+                <div>
+                    <form>
+                        <ul>
+                            <li><span>一室一厅</span></li>
+                            <li class="active"><span>二室一厅</span></li>
+                            <li><span>二室二厅</span></li>
+                            <li><span>三室一厅</span></li>
+                            <li><span>三室二厅</span></li>
+                            <li><span>其他户型</span></li>
+                        </ul>
+                        <p>
+                            <select>
+                                <option>房屋所在城市</option>
+                                <option>北京</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
+                        </p>
+                        <p>
+                            <input class="phone" type="tel" placeholder="联系电话，便于提供0元装修服务" value="">
+                        </p>
+                        <button id="button1">立即领取</button>
+                    </form>
+                    <div class="tips">*为了您的隐私及我们的声誉 您的信息将被严格保密*</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/bg_03.jpg" />
+    <img src="images/bg_04.jpg" />
+    <img src="images/bg_05.jpg" />
+    <img src="images/bg_06.jpg" />
+    <div class="bg_wrapper4">
+            <img src="images/bg_07.jpg" />
+            <div class="swiper-container swiperA">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/change_01.jpg"></div>
+                    <div class="swiper-slide"><img src="images/change_02.jpg"></div>
+                    <div class="swiper-slide"><img src="images/change_03.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </div>
+    <img src="images/bg_08.png" />
+    <div class="bg_wrapper5">
+            <div class="swiper-box-wrapper">
+                    <div class="swiperBox swiperBoxE">
+                        <ul class="thumberTab">
+                            <li class="active"><span>儿童房</span></li>
+                            <li><span>卧室</span></li>
+                            <li><span>书房</span></li>
+                        </ul>
+                        <div class="swiper-container swiperE">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/room_01.jpg"></div>
+                                <div class="swiper-slide"><img src="images/room_02.jpg"></div>
+                                <div class="swiper-slide"><img src="images/room_03.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <div class="bg_wrapper6">
+        <button class="modal-btn"><span>我要0元配色方案</span></button>
+    </div>
+    <img src="images/bg_09.jpg" alt="">
+    <div class="bg_wrapper7">
+            <button class="modal-btn"><span>立即抢占0元设计</span></button>
+            <p class="tips">爱空间科技（北京）有限公司 京ICP备15007819号-1</p>
+    </div>
+</div>
+<script>
+     //提示框
+     var timer;
+    var scrollTop;
+     var pos = $("#orderOffset").offset().top - 100;
+    function noScroll () {
+        scrollTop = $(window).scrollTop();
+        $("body,html").css("overflow",'hidden');
+        $(".actCon").css("margin-top",-scrollTop+"px");
+    };
+
+    function ScrollTop() {
+        $("body,html,.actCon").removeAttr("style");
+        $(window).scrollTop(scrollTop);
+    };
+    //提示框
+    function errorTips(text) {
+        $(".errorTips").remove();
+        var tips = '<div class="errorTips"><p>'+text+'</p></div>';
+        $(tips).appendTo("body");
+        $(".errorTips").show();
+        window.clearInterval(timer);
+        timer = setTimeout('$(".errorTips").remove()',2000);
+    };
+    //预约成功
+    function orderActScu() {
+        scrollTop = ($(window).scrollTop() > 0) ? $(window).scrollTop() : scrollTop;
+        $(".actPop .nomalForm,.actPop .redBagForm,.actPop .orderRedScu").hide();
+        $(".actPop,.actPop .orderScu").show();
+    }
+
+    //close actPop
+    function actPopClose () {
+        $(".actPop,.actPop .redBagForm,.actPop .orderScu,.actPop .orderRedScu").hide();
+        ScrollTop();
+    }
+
+    //方案弹层
+    $(".modal-btn").click(function(){
+        $('html,body').animate({
+            scrollTop: pos
+        }, 500);
+    });
+
+    //关闭弹层
+    $("body").on("click",".actPop .close",function () {
+        actPopClose();
+    });
+
+    //选择房屋类型
+    $(".order li").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+    });
+    var swiperA = new Swiper('.swiperA', {
+            autoplay: 3000,
+            effect : 'fade',
+            loop : true,
+            autoplayDisableOnInteraction : false,
+            pagination: '.swiper-pagination'
+        });
+
+    var swiperE = new Swiper('.swiperE', {
+        autoplay: 3000,
+        effect : 'fade',
+        loop : true,
+        autoplayDisableOnInteraction : false,
+        onSlideChangeEnd: function(swiper){
+            var upTab = $(".swiperBoxE .thumberTab li"),
+                curIndex = swiper.activeIndex-1;
+            if(swiper.activeIndex > upTab.length){
+                curIndex = 0;
+            }
+            upTab.eq(curIndex).addClass("active").siblings().removeClass("active");
+        }
+    });
+    $(".swiperBoxE .thumberTab li").click(function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        swiperE.slideTo(index+1, 1000, false);
+    });
+
+
+     $("button").click(function (e) {
+         e.preventDefault();
+         errorTips("报价成功！");
+     })
+</script>  
+</body>
+</html>

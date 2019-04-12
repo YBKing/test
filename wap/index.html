@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+    <meta charset="UTF-8">
+    <title>10秒得报价</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="爱空间,北京装修,北京装修公司,北京装修设计,北京装修平台,北京装修网,北京装修公司排名">
+    <meta name="description" content="爱空间北京装修网提供北京装修、北京装修公司排名、北京装修设计、北京装修平台、北京装修网等相关服务信息，唯有爱，能改变，北京装修首选爱空间装修平台！">
+    <link type="text/css" rel="stylesheet" href="http://m.ikongjian.com/assets/2017/css/css.css">
+    <link type="text/css" rel="stylesheet" href="img/activity.css">
+    <script type="text/javascript" src="http://m.ikongjian.com/assets/2017/js/jquery.min.js"></script>
+    <script type="text/javascript" src="img/countUp.js"></script>
+</head>
+<body>
+    <div class="actCon">
+        <img class="topImg" src="img/banner.jpg" alt="装修不请假搞定全工期">
+        <div class="order topOrder">
+            <div class="jsq"><img src="img/jsq.gif"></div>
+            <p>
+                <select>
+                    <option>选择房屋所在城市</option>
+                    <option>北京</option>
+                </select>
+            </p>
+            <p>
+                <input class="area" type="text" placeholder="您的房屋面积" value="">
+                <i>㎡</i>
+            </p>
+            <p>
+                <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
+            </p>
+            <p>
+                <input class="phone" type="tel" placeholder="联系方式，便于提供0元装修服务" maxlength="11" value="">
+            </p>
+            <button>10秒得报价</button>
+            <div class="tips">您的信息我们一定保密 稍后会将信息发送到您手机</div>
+        </div>
+        <img src="img/title1.png" alt="2018年流行风格 全在这儿">
+        <ul class="styleImg">
+            <li><img src="img/xiandai.jpg" alt="现代风格"></li>
+            <li><img src="img/oushi.jpg" alt="欧式风格"></li>
+            <li><img src="img/zhongshi.jpg" alt="中式风格"></li>
+            <li><img src="img/beiou.jpg" alt="北欧风格"></li>
+        </ul>
+        <img src="img/title2.png" alt="口碑实力派的6大核心 每1位老客户推荐1.4人成为新客户">
+        <ul class="sixCroe">
+            <li><img src="img/six1.jpg" alt="全程0增项 报价精准 预算不超"></li>
+            <li><img src="img/six2.jpg" alt="严选大牌 显品味 保质量 一举两得"></li>
+            <li><img src="img/six3.jpg" alt="儿童级环保 给孩子可以摸爬滚打的家"></li>
+            <li><img src="img/six4.jpg" alt="33天工期 毛坯到精装 逾期赔付"></li>
+            <li><img src="img/six5.jpg" alt="直管工人 施工一丝不苟 像在给自家装修"></li>
+            <li><img src="img/six6.jpg" alt="APP监工 在办公室就能监控工地"></li>
+        </ul>
+        <p class="copyRight">爱空间科技（北京）有限公司 京ICP备15007819号-1</p>
+    </div>
+    <script type="text/javascript">
+        var timer;
+        //提示框
+        function errorTips(text) {
+            $(".errorTips").remove();
+            var tips = '<div class="errorTips"><p>'+text+'</p></div>';
+            $(tips).appendTo("body");
+            $(".errorTips").show();
+            window.clearInterval(timer);
+            timer = setTimeout('$(".errorTips").remove()',3000);
+        };
+
+        $("button").click(function (e) {
+            e.preventDefault();
+            errorTips("报价成功！");
+        })
+    </script>
+
+</body>
+</html>
