@@ -1,0 +1,1028 @@
+*, *:before, *:after {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px "苹方", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input, button, input[type=text] {
+    border: 0;
+    vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::-moz-placeholder {
+    color: #b0b0b0;
+}
+
+input:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+input::placeholder {
+    color: #b0b0b0;
+}
+
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: top;
+}
+
+.head, .footer {
+    display: none !important;
+}
+
+.sprite {
+    display: inline-block;
+    background: url("sprite.png") no-repeat;
+    vertical-align: middle;
+}
+
+.sprite_label {
+    width: 130px;
+    height: 131px;
+    background-position: 0 0;
+}
+
+.sprite_kt {
+    width: 36px;
+    height: 30px;
+    background-position: 0 -150px;
+}
+
+.sprite_cf {
+    width: 36px;
+    height: 31px;
+    background-position: -50px -150px;
+}
+
+.sprite_wsj {
+    width: 27px;
+    height: 32px;
+    background-position: -100px -150px;
+}
+
+.sprite_ws {
+    width: 40px;
+    height: 33px;
+    background-position: -150px -150px;
+}
+
+.on .sprite_kt {
+    background-position: 0 -200px;
+}
+
+.on .sprite_cf {
+    background-position: -50px -200px;
+}
+
+.on .sprite_wsj {
+    background-position: -100px -200px;
+}
+
+.on .sprite_ws {
+    background-position: -150px -200px;
+}
+
+.sprite_prev {
+    background-position: -100px -250px;
+}
+
+.sprite_next {
+    background-position: 0 -250px;
+}
+
+.icon {
+    display: inline-block;
+    background: url("icon.png") no-repeat;
+    vertical-align: middle;
+}
+
+.icon_city {
+    width: 23px;
+    height: 28px;
+    background-position: 0 0;
+}
+
+.icon_user {
+    width: 24px;
+    height: 26px;
+    background-position: -100px 0;
+}
+
+.icon_phone {
+    width: 23px;
+    height: 29px;
+    background-position: -200px 0;
+}
+
+.icon_rt_1 {
+    width: 31px;
+    height: 31px;
+    background-position: 0 -50px;
+}
+
+.icon_rt_2 {
+    width: 28px;
+    height: 28px;
+    background-position: -100px -50px;
+}
+
+.icon_rt_3 {
+    width: 30px;
+    height: 30px;
+    background-position: -200px -50px;
+}
+
+a:hover .icon_rt_1 {
+    background-position: 0 -100px;
+}
+
+a:hover .icon_rt_2 {
+    background-position: -100px -100px;
+}
+
+a:hover .icon_rt_3 {
+    background-position: -200px -100px;
+}
+
+/*表单*/
+.order .hd {
+    text-align: center;
+    color: #fff;
+}
+
+.order .hd h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.order .hd p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #222;
+}
+
+.order .hd span {
+    margin: 0 3px;
+    color: #e7391e;
+}
+
+.order p {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.order p label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 52px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.order p img {
+    vertical-align: middle;
+}
+
+.order input, .order select {
+    padding: 10px 20px 10px 52px;
+    width: 100%;
+    height: 55px;
+    line-height: 35px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+}
+
+.order select {
+    background: url("select.png") no-repeat 390px center #fff;
+}
+
+.order button {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #222;
+    font-size: 26px;
+    background: #ffc40f;
+    border-radius: 5px;
+}
+
+.order p.tips {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ddd;
+    text-align: center;
+}
+
+.activityCon {
+    min-width: 1100px;
+}
+
+.actSecCon {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.actBanner .title {
+    display: none;
+}
+
+.actBanner {
+    height: 752px;
+    background: url("bg_01.jpg") no-repeat top center;
+}
+
+.actSecA {
+    height: 842px;
+    background: url("bg_02.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecB {
+    height: 1270px;
+    background: url("bg_03.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecC {
+    height: 1398px;
+    background: url("bg_04.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecD {
+    height: 1354px;
+    background: url("bg_05.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecE {
+    height: 1188px;
+    background: url("bg_06.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecF {
+    height: 1010px;
+    background: url("bg_07.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecG {
+    height: 1064px;
+    background: url("bg_08.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecH {
+    height: 866px;
+    background: url("bg_09.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecI {
+    height: 1472px;
+    background: url("bg_10.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actSecJ {
+    height: 942px;
+    background: url("bg_11.jpg") no-repeat top center;
+    overflow: hidden;
+}
+
+.actBanner .logo {
+    float: right;
+    display: block;
+    margin: 30px 140px 0 0;
+    width: 80px;
+    height: 90px;
+}
+
+.actSecA .actSecCon {
+    padding-top: 205px;
+}
+
+.actSecA .textScollBox {
+    float: left;
+    width: 550px;
+    height: 326px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.actSecA .textScollBox .number {
+    padding: 70px 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.actSecA .textScollBox ul {
+    font-family: "PingFangSC-Medium";
+}
+
+.actSecA .textScollBox .number span {
+    margin: 0 3px;
+    color: #f84c1d;
+}
+
+.actSecA .order {
+    float: left;
+    margin: 30px 0 0 45px;
+    width: 420px;
+}
+
+.actSecA .order .hd{
+    padding-bottom: 10px;
+}
+
+.actSecA .order .hd p{
+    color: #fff;
+    font-size: 28px;
+}
+
+.actSecA .order ul {
+    margin-left: -10px;
+    overflow: hidden;
+}
+
+.actSecA .order li {
+    margin: 0 0 10px 10px;
+    float: left;
+    position: relative;
+    width: 205px;
+    height: 55px;
+    text-align: center;
+    color: #fff;
+    line-height: 55px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.actSecA .order li span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+}
+
+.actSecA .order li p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.actSecA .order li.active {
+    border-color: #ffc40f;
+    color: #311d06;
+}
+
+.actSecA .order li.active span {
+    background: #ffc40f;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.actSecC .actSecCon {
+    padding-top: 470px;
+}
+
+.actBtnBox {
+    padding-top: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.actBtnBox span {
+    margin: 0 3px;
+    color: #ff7d1e;
+}
+
+.actBtnBox .actPopBtn {
+    display: inline-block;
+    margin-top: 20px;
+    width: 500px;
+    height: 70px;
+    line-height: 70px;
+    color: #222;
+    font-size: 30px;
+    border-radius: 5px;
+    background: #ffc40f;
+}
+
+.actSecD .actSecCon {
+    padding-top: 550px;
+}
+
+.actSecD .actBtnBox, .actSecF .actBtnBox, .actSecH .actBtnBox {
+    color: #222;
+}
+
+.actDesigner, .actExample {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.actDesigner .hd ul {
+    margin-left: 60px;
+    overflow: hidden;
+}
+
+.actDesigner .hd li {
+    float: left;
+    width: 245px;
+    line-height: 90px;
+    font-size: 26px;
+}
+
+.actDesigner .hd li i {
+    margin: -2px 5px 0 0;
+    cursor: pointer;
+}
+
+.actDesigner .hd li.on {
+    color: #fa741b;
+}
+
+.actDesigner .bd {
+    border-radius: 10px;
+    height: 638px;
+    overflow: hidden;
+}
+
+.actDesigner .prev, .actDesigner .next {
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    width: 40px;
+    height: 80px;
+}
+
+.actDesigner .prev {
+    left: 0;
+}
+
+.actDesigner .next {
+    right: 0;
+}
+
+.actExample .hd {
+    height: 85px;
+    text-align: center;
+}
+
+.actExample .hd ul {
+    margin-left: -70px;
+}
+
+.actExample .hd li {
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    width: 320px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 26px;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.actExample .hd li.on {
+    background: #f57825;
+    color: #fff;
+}
+
+.actExample .hd li.on:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #f57825;
+}
+
+.actExample .bd {
+    height: 500px;
+}
+
+.actSecE .actSecCon {
+    padding-top: 980px;
+}
+
+.actSecF .actSecCon {
+    padding-top: 790px;
+}
+
+.actSecG .actSecCon {
+    padding-top: 840px;
+}
+
+.actSecH .actSecCon {
+    padding-top: 645px;
+}
+
+.actSecI .actSecCon {
+    padding-top: 980px;
+}
+
+.actSecI .actDidi {
+    height: 255px;
+    padding: 165px 0 0 615px;
+}
+
+.actSecI .actDidi a {
+    display: block;
+    width: 276px;
+    height: 60px;
+    line-height: 58px;
+    border: 1px solid #fff;
+    font-size: 26px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.actSecJ .orderBox {
+    height: 765px;
+    padding: 320px 0 0 568px;
+}
+
+.actSecJ .order {
+    width: 400px;
+}
+
+.actSecJ .order button {
+    font-weight: bold;
+}
+
+.actSecJ .order .tips {
+    color: #999;
+}
+
+.copyright {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+.order button, .actPopBtn {
+    cursor: pointer;
+    -webkit-animation: scale 0.4s ease-in-out infinite alternate;
+    animation: scale 0.4s ease-in-out infinite alternate;
+}
+
+.rightBar {
+    position: fixed;
+    bottom: 200px;
+    left: 50%;
+    z-index: 2;
+    margin: -180px 0 0 600px;
+    width: 100px;
+}
+
+.rightBar a {
+    display: block;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    color: #222;
+}
+
+.rightBar a.link {
+    padding-top: 10px;
+    margin-top: 1px;
+    width: 90px;
+    height: 70px;
+    background: #f3f3f3;
+}
+
+.rightBar a.link:hover {
+    background: #f66016;
+}
+
+.rightBar a.consultBtn {
+    margin-top: 1px;
+    height: 49px;
+    line-height: 49px;
+    border-radius: 0 0 10px 10px;
+    background: #f3f3f3;
+}
+
+.rightBar a.consultBtn:hover {
+    background: #f66016;
+}
+
+.rightBar a:hover {
+    color: #fff;
+}
+
+.rightBar .redBag {
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 8px;
+    -webkit-animation: swing 0.3s ease-in-out infinite alternate;
+    animation: swing 0.3s ease-in-out infinite alternate;
+}
+
+.actFixOrder {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+}
+
+.actFixOrder .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.actFixOrder h3 {
+    float: left;
+    margin-right: 50px;
+    padding-top: 16px;
+    font-size: 40px;
+    width: 216px;
+    color: #ffc40f;
+    font-weight: normal;
+    text-align: center;
+    line-height: 44px;
+    font-family: PingFangSC-Heavy;
+}
+
+.actFixOrder h3 span {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: PingFangSC-Regular;
+}
+
+.actFixOrder .order {
+    position: relative;
+    padding-top: 35px;
+}
+
+.actFixOrder .order input, .actFixOrder .order select {
+    float: left;
+    border: 0;
+    padding: 10px 20px;
+    margin-right: 20px;
+    width: 190px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.actFixOrder .order select {
+    background-position: 160px center;
+}
+
+.actFixOrder .order button {
+    width: 190px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    box-shadow: none;
+}
+
+.actFixOrder .order .close {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.actFixFold {
+    position: fixed;
+    bottom: 0;
+    right: -280px;
+    z-index: 2;
+    background: url("fix_fold_btn.png") no-repeat;
+    padding-top: 25px;
+    width: 148px;
+    height: 134px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.actFixFold img {
+    text-align: center;
+    -webkit-animation: moveUp 0.3s ease-in-out infinite alternate;
+    animation: moveUp 0.3s ease-in-out infinite alternate;
+}
+
+/*预约弹框*/
+.hdMask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.resPop, .actOrderScu, .actOrderRedScu, .actOrderCostScu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 21;
+    margin: -300px 0 0 -250px;
+    width: 500px;
+    height: 500px;
+}
+
+.actOrderScu .close, .actOrderRedScu .close {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+}
+
+.resPop .close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+
+.resPop .head {
+    display: block !important;
+    position: relative;
+    height: 160px !important;
+    border-radius: 10px 10px 0 0;
+    overflow: initial !important;
+    background: url("pop_order_hd.jpg") no-repeat top center;
+}
+
+.resPop .head .money {
+    position: absolute;
+    top: 25px;
+    left: -28px;
+}
+
+.resPop .nomalForm .head {
+    height: 171px;
+    background: url("pop_order_hd_n.jpg") no-repeat top center;
+}
+
+.resPop .order {
+    padding: 20px 24px 32px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.resPop .order .hd {
+    color: #222;
+}
+
+.resPop .redBagForm .order {
+    padding-top: 36px;
+}
+
+.resPop .order ul li {
+    width: 143px;
+    border: 1px solid #b1b1b1;
+    color: #000;
+    font-size: 16px;
+    background: transparent;
+}
+
+.resPop .order ul li.active {
+    border-color: #fcce40;
+    background: #fcce40;
+}
+
+.resPop .order input, .resPop .order select {
+    border: 1px solid #b1b1b1;
+}
+
+.resPop .order select {
+    background-position: 420px center;
+}
+
+.resPop .order button {
+    background: #fd4506;
+    color: #fff;
+}
+
+.costForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 21;
+    display: none;
+    margin: -200px 0 0 -425px;
+    width: 850px;
+    height: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: url("pop_bg.jpg") no-repeat #fff;
+}
+
+.costForm .close,
+.actOrderCostScu .close {
+    position: absolute;
+    top: -15px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.costForm .order {
+    position: relative;
+    padding-top: 15px;
+    width: 320px;
+    margin-left: 455px;
+}
+
+.costForm .order .hd {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+}
+
+.costForm .order .hd h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.costForm .order input,
+.costForm .order select, .costForm .order button {
+    height: 50px;
+    line-height: 30px;
+}
+
+.costForm .order button{
+    background: #fa7b0b;
+    color: #fff;
+    font-size: 24px;
+}
+.costForm .order .tips{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.actOrderCostScu {
+    width: 742px;
+    height: 310px;
+    margin: -155px 0 0 -371px;
+}
+
+.actOrderCostScu img {
+    border-radius: 10px;
+}
+
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: scale(1.05);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes swing {
+    from {
+        -webkit-transform: rotate(10deg);
+    }
+    to {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@keyframes swing {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes moveUp {
+    from {
+        margin-top: -3px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        margin-top: -3px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .rightBar {
+        left: inherit;
+        right: 10px;
+        margin-left: 0;
+    }
+}

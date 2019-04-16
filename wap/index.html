@@ -1,75 +1,511 @@
 <!DOCTYPE html>
-<html lang="zh-cmn">
+<html lang="cmn-Hans-CN">
 <head>
     <meta charset="UTF-8">
-    <title>10秒得报价</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="爱空间,北京装修,北京装修公司,北京装修设计,北京装修平台,北京装修网,北京装修公司排名">
-    <meta name="description" content="爱空间北京装修网提供北京装修、北京装修公司排名、北京装修设计、北京装修平台、北京装修网等相关服务信息，唯有爱，能改变，北京装修首选爱空间装修平台！">
-    <link type="text/css" rel="stylesheet" href="http://m.ikongjian.com/assets/2017/css/css.css">
-    <link type="text/css" rel="stylesheet" href="img/activity.css">
-    <script type="text/javascript" src="http://m.ikongjian.com/assets/2017/js/jquery.min.js"></script>
-    <script type="text/javascript" src="img/countUp.js"></script>
+    <title>老房二手房拯救指南-爱空间</title>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="http://bj.ikongjian.com/assets/2017pc/css/css.css" rel="stylesheet" type="text/css" />
+    <link href="images/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://www.ikongjian.com/assets/2017pc/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.ikongjian.com/assets/2017pc/js/banner.super.js"></script>
+    <script type="text/javascript" src="images/countUp.js"></script>
 </head>
 <body>
-    <div class="actCon">
-        <img class="topImg" src="img/banner.jpg" alt="装修不请假搞定全工期">
-        <div class="order topOrder">
-            <div class="jsq"><img src="img/jsq.gif"></div>
+<div class="activityCon">
+    <div class="actBanner">
+        <div class="actSecCon">
+            <a class="logo" href="https://www.ikongjian.com"></a>
+            <div class="title">
+                <h1>老房二手房拯救指南</h1>
+            </div>
+        </div>
+    </div>
+    <div class="actSecA">
+        <div class="actSecCon">
+            <div class="textScollBox">
+                <div class="number">1分钟前 已有<span>2573</span>业主成功领取方案</div>
+                <div class="inner bd">
+                    <ul>
+                        <li>辛女士 134******** 领取了方案</li>
+                        <li>刘先生 150******** 领取了方案</li>
+                        <li>王先生 186******** 领取了方案</li>
+                        <li>赵女士 139******** 领取了方案</li>
+                        <li>崔先生 180******** 领取了方案</li>
+                        <li>桂女士 186******** 领取了方案</li>
+                        <li>李先生 139******** 领取了方案</li>
+                        <li>申先生 135******** 领取了方案</li>
+                        <li>刘女士 133******** 领取了方案</li>
+                        <li>贺女士 136******** 领取了方案</li>
+                        <li>关先生 158******** 领取了方案</li>
+                        <li>杨女士 134******** 领取了方案</li>
+                        <li>杨先生 150******** 领取了方案</li>
+                        <li>张先生 186******** 领取了方案</li>
+                        <li>尹女士 139******** 领取了方案</li>
+                        <li>黄先生 180******** 领取了方案</li>
+                        <li>李女士 186******** 领取了方案</li>
+                        <li>钱先生 139******** 领取了方案</li>
+                        <li>左先生 135******** 领取了方案</li>
+                        <li>刘女士 133******** 领取了方案</li>
+                        <li>周女士 136******** 领取了方案</li>
+                        <li>王先生 158******** 领取了方案</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order">
+                <div class="hd">
+                    <p>0元方案仅剩<span id="surplusB">100</span>套</p>
+                </div>
+                <ul>
+                    <li><span></span><p>一居室改造</p></li>
+                    <li class="active"><span></span><p>二居室改造</p></li>
+                    <li><span></span><p>三居室改造</p></li>
+                    <li><span></span><p>四居室改造</p></li>
+                </ul>
+                <form>
+                    <p>
+                        <label for=""><i class="icon icon_city"></i></label>
+                        <select id="">
+                            <option>选择房屋所在城市</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for=""><i class="icon icon_user"></i></label>
+                        <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
+                    </p>
+                    <p>
+                        <label for=""><i class="icon icon_phone"></i></label>
+                        <input type="tel" value="" placeholder="方便与您沟通设计方案">
+                    </p>
+                    <button id="button1">立即领取</button>
+                    <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="actSecB"></div>
+    <div class="actSecC">
+        <div class="actSecCon">
+            <div class="actDesigner">
+                <div class="hd">
+                    <ul>
+                        <li><i class="sprite sprite_kt"></i>改造客厅</li>
+                        <li><i class="sprite sprite_cf"></i>厨房客厅</li>
+                        <li><i class="sprite sprite_wsj"></i>卫生间客厅</li>
+                        <li><i class="sprite sprite_ws"></i>卧室客厅</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><img src="images/sj_kt.jpg" alt=""></li>
+                        <li><img src="images/sj_cf.jpg" alt=""></li>
+                        <li><img src="images/sj_wsj.jpg" alt=""></li>
+                        <li><img src="images/sj_ws.jpg" alt=""></li>
+                    </ul>
+                    <i class="sprite sprite_label"></i>
+                </div>
+                <a class="prev sprite sprite_next" href="javascript:;"></a>
+                <a class="next sprite sprite_prev" href="javascript:;"></a>
+            </div>
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusC">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecD">
+        <div class="actSecCon">
+            <div class="actExample">
+                <div class="hd">
+                    <ul>
+                        <li>设计师</li>
+                        <li>100%产业工人</li>
+                        <li>1对1管家</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><img src="images/zh_1.jpg" alt=""></li>
+                        <li><img src="images/zh_2.jpg" alt=""></li>
+                        <li><img src="images/zh_3.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusD">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecE">
+        <div class="actSecCon">
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusE">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecF">
+        <div class="actSecCon">
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusF">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecG">
+        <div class="actSecCon">
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusG">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecH">
+        <div class="actSecCon">
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusH">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecI">
+        <div class="actSecCon">
+            <div class="actDidi">
+                <a class="actPopBtn" href="javascript:;">现在领 随时用</a>
+            </div>
+            <div class="actBtnBox">
+                <p>0元改造方案 仅剩<span id="surplusI">100</span>套</p>
+                <a class="actPopBtn" href="javascript:;">立即抢占0元方案</a>
+            </div>
+        </div>
+    </div>
+    <div class="actSecJ">
+        <div class="actSecCon">
+            <div class="orderBox">
+                <div class="order">
+                    <div class="hd">
+                        <p>已有<span>1242325</span>业主获得服务 并装完了房子</p>
+                    </div>
+                    <form>
+                        <p>
+                            <label for=""><i class="icon icon_city"></i></label>
+                            <select id="">
+                                <option>选择房屋所在城市</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for=""><i class="icon icon_user"></i></label>
+                            <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
+                        </p>
+                        <p>
+                            <label for=""><i class="icon icon_phone"></i></label>
+                            <input type="tel" value="" placeholder="联系方式，便于提供0元装修服务">
+                        </p>
+                        <button id="button2">立即领取</button>
+                        <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+                    </form>
+                </div>
+            </div>
+            <p class="copyright">爱空间科技（北京）有限公司 版权所有京ICP备15007819号-1</p>
+        </div>
+    </div>
+</div>
+
+<!--底部浮层-->
+<div class="actFixOrder">
+    <div class="mask"></div>
+    <div class="actSecCon">
+        <h3>装修就选<span>爱空间</span></h3>
+        <div class="order">
+            <img class="close" src="images/close.png" alt="关闭">
+            <select>
+                <option>房屋所在城市</option>
+            </select>
+            <input type="text" value="" placeholder="您的称呼">
+            <input type="tel" value="" placeholder="联系方式">
+            <button id="button3">立即领取</button>
+        </div>
+    </div>
+</div>
+<div class="actFixFold"><img src="images/handle.png" alt=""></div>
+
+<!--right bar-->
+<div class="rightBar">
+    <a class="top" href="https://www.ikongjian.com" target="_blank"><img src="images/fix_rt_ikj.png" alt="爱空间标准化家装"></a>
+    <a class="link" href="https://www.ikongjian.com/ikj/20171127a" target="_blank"><i class="icon icon_rt_3"></i><br>0元报价</a>
+    <a class="link" href="https://www.ikongjian.com/ikj/20190114" target="_blank"><i class="icon icon_rt_1"></i><br>0元设计</a>
+    <a class="link" href="https://www.ikongjian.com/ikj/20181017" target="_blank"><i class="icon icon_rt_2"></i><br>0元领效果图</a>
+    <a class="consultBtn" href="javascript:soCall();">聊聊设计师</a>
+    <img class="redBag" src="images/redbag.png" alt="装修红包">
+</div>
+
+<!--弹框-->
+<div class="hdMask"></div>
+<!--弹框form-->
+<div class="resPop">
+    <img class="close" src="images/close2.png"/>
+    <div class="nomalForm" style="display: none;">
+        <div class="head">
+        </div>
+        <div class="order">
+            <p class="hd">已有<span>1242325</span>业主获得服务 并装完了房子</p>
+            <form>
+                <p>
+                    <label for=""><i class="icon icon_city"></i></label>
+                    <select id="">
+                        <option>房屋所在城市</option>
+                    </select>
+                </p>
+                <p>
+                    <label for=""><i class="icon icon_user"></i></label>
+                    <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
+                </p>
+                <p>
+                    <label for=""><i class="icon icon_phone"></i></label>
+                    <input type="tel" value="" placeholder="方便与您沟通设计方案">
+                </p>
+                <button id="button4">一键获取</button>
+                <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+        </form>
+    </div>
+    </div>
+    <!--红包表单-->
+    <div class="redBagForm" style="display: none">
+        <div class="head">
+            <img class="money" src="images/money.png" alt="">
+        </div>
+        <div class="order">
+            <p class="hd">已有<span>1242325</span>业主获得服务 并装完了房子</p>
+            <form>
+                <p>
+                    <label for=""><i class="icon icon_city"></i></label>
+                    <select id="">
+                        <option>房屋所在城市</option>
+                    </select>
+                </p>
+                <p>
+                    <label for=""><i class="icon icon_user"></i></label>
+                    <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
+                </p>
+                <p>
+                    <label for=""><i class="icon icon_phone"></i></label>
+                    <input type="tel" value="" placeholder="联系方式，便于提供0元装修服务">
+                </p>
+                <button id="button5">立即收入囊中</button>
+                <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--自动弹层-->
+<div class="costForm" style="display: none;">
+    <img class="close" src="images/close4.png"/>
+    <div class="order">
+        <div class="hd">
+            <h2>-0元领取房屋改造方案-</h2>
+            <p>仅剩<span id="surplusA">100</span>套方案</p>
+        </div>
+        <form>
             <p>
-                <select>
-                    <option>选择房屋所在城市</option>
-                    <option>北京</option>
+                <label for=""><i class="icon icon_city"></i></label>
+                <select id="">
+                    <option>房屋所在城市</option>
                 </select>
             </p>
             <p>
-                <input class="area" type="text" placeholder="您的房屋面积" value="">
-                <i>㎡</i>
+                <label for=""><i class="icon icon_user"></i></label>
+                <input id="" type="text" value="" placeholder="您的称呼，如王先生/刘女士">
             </p>
             <p>
-                <input class="user" type="text" placeholder="您的称呼，如王先生/刘女士" value="">
+                <label for=""><i class="icon icon_phone"></i></label>
+                <input type="tel" value="" placeholder="联系方式，便于给您装修服务">
             </p>
-            <p>
-                <input class="phone" type="tel" placeholder="联系方式，便于提供0元装修服务" maxlength="11" value="">
-            </p>
-            <button>10秒得报价</button>
-            <div class="tips">您的信息我们一定保密 稍后会将信息发送到您手机</div>
-        </div>
-        <img src="img/title1.png" alt="2018年流行风格 全在这儿">
-        <ul class="styleImg">
-            <li><img src="img/xiandai.jpg" alt="现代风格"></li>
-            <li><img src="img/oushi.jpg" alt="欧式风格"></li>
-            <li><img src="img/zhongshi.jpg" alt="中式风格"></li>
-            <li><img src="img/beiou.jpg" alt="北欧风格"></li>
-        </ul>
-        <img src="img/title2.png" alt="口碑实力派的6大核心 每1位老客户推荐1.4人成为新客户">
-        <ul class="sixCroe">
-            <li><img src="img/six1.jpg" alt="全程0增项 报价精准 预算不超"></li>
-            <li><img src="img/six2.jpg" alt="严选大牌 显品味 保质量 一举两得"></li>
-            <li><img src="img/six3.jpg" alt="儿童级环保 给孩子可以摸爬滚打的家"></li>
-            <li><img src="img/six4.jpg" alt="33天工期 毛坯到精装 逾期赔付"></li>
-            <li><img src="img/six5.jpg" alt="直管工人 施工一丝不苟 像在给自家装修"></li>
-            <li><img src="img/six6.jpg" alt="APP监工 在办公室就能监控工地"></li>
-        </ul>
-        <p class="copyRight">爱空间科技（北京）有限公司 京ICP备15007819号-1</p>
+            <button id="button6">一键获取</button>
+            <p class="tips">为了您的隐私和我们的声誉 您的信息爱空间将严格保密</p>
+        </form>
     </div>
-    <script type="text/javascript">
-        var timer;
-        //提示框
-        function errorTips(text) {
-            $(".errorTips").remove();
-            var tips = '<div class="errorTips"><p>'+text+'</p></div>';
-            $(tips).appendTo("body");
-            $(".errorTips").show();
-            window.clearInterval(timer);
-            timer = setTimeout('$(".errorTips").remove()',3000);
-        };
+</div>
 
-        $("button").click(function (e) {
+<!--预约成功-->
+<div class="actOrderScu">
+    <img src="images/pop_scu_n.png" alt="预约成功">
+    <img class="close" src="images/close2.png">
+</div>
+<!--预约成功-->
+<div class="actOrderRedScu">
+    <img src="images/pop_scu.png" alt="预约成功">
+    <img class="close" src="images/close2.png">
+</div>
+
+<div class="actOrderCostScu">
+    <img src="images/pop_cost_scu.jpg" alt="预约成功">
+    <img class="close" src="images/close4.png">
+</div>
+
+<script type="text/javascript">
+
+    //数字滚动
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: '',
+        decimal: '.',
+    };
+    //仅剩
+    var surplusA = new CountUp("surplusA", 100, 5, 0, 1.5,options);
+    var surplusB = new CountUp("surplusB", 100, 5, 0, 1.5,options);
+    var surplusC = new CountUp("surplusC", 100, 5, 0, 1.5,options);
+    var surplusD = new CountUp("surplusD", 100, 5, 0, 1.5,options);
+    var surplusE = new CountUp("surplusE", 100, 5, 0, 1.5,options);
+    var surplusF = new CountUp("surplusF", 100, 5, 0, 1.5,options);
+    var surplusG = new CountUp("surplusG", 100, 5, 0, 1.5,options);
+    var surplusH = new CountUp("surplusH", 100, 5, 0, 1.5,options);
+    var surplusI = new CountUp("surplusI", 100, 5, 0, 1.5,options);
+    //普通弹框
+    function popNormal () {
+        $(".redBagForm,.actOrderScu,.actOrderRedScu,.costForm").hide();
+        $(".hdMask,.resPop,.nomalForm").show();
+    };
+    function popRedbag () {
+        $(".nomalForm,.actOrderScu,.actOrderRedScu,.costForm").hide();
+        $(".hdMask,.resPop,.redBagForm").show();
+    };
+    //报价弹层
+    function popCost () {
+        $(".nomalForm,.resPop,.redBagForm,.actOrderScu,.actOrderRedScu,.actOrderCostScu").hide();
+        $(".hdMask,.costForm").show();
+        surplusA.start();
+    };
+    //成功
+    function actOrderScu () {
+        $(".resPop,.actOrderRedScu").hide();
+        $(".hdMask,.actOrderScu").show();
+    };
+    function redBagOrderScu () {
+        $(".resPop,.actOrderScu").hide();
+        $(".hdMask,.actOrderRedScu").show();
+    };
+    function costOrderScu () {
+        $(".resPop,.costForm").hide();
+        $(".hdMask,.actOrderCostScu").show();
+    };
+
+    $(function () {
+        var t = setTimeout("popCost()",3000);
+
+        var halfBrowserH = $("body").height();
+        var posB = $("#surplusB").offset().top - halfBrowserH;
+        var posC = $("#surplusC").offset().top - halfBrowserH;
+        var posD = $("#surplusD").offset().top - halfBrowserH;
+        var posE = $("#surplusE").offset().top - halfBrowserH;
+        var posF = $("#surplusF").offset().top - halfBrowserH;
+        var posG = $("#surplusG").offset().top - halfBrowserH;
+        var posH = $("#surplusH").offset().top - halfBrowserH;
+        var posI = $("#surplusI").offset().top - halfBrowserH;
+        //滚动到目标文字数字滚动
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop>posB){
+                surplusB.start();
+            }
+            if(scrollTop>posC){
+                surplusC.start();
+            }
+            if(scrollTop>posD){
+                surplusD.start();
+            }
+            if(scrollTop>posE){
+                surplusE.start();
+            }
+            if(scrollTop>posF){
+                surplusF.start();
+            }
+            if(scrollTop>posG){
+                surplusG.start();
+            }
+            if(scrollTop>posH){
+                surplusH.start();
+            }
+            if(scrollTop>posI){
+                surplusI.start();
+            }
+        });
+
+        $(".textScollBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true,
+            effect: "topMarquee",
+            vis: 9,
+            interTime: 30,
+            trigger: "click"
+        });
+        //选择房屋类型
+        $(".order li").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+        //效果图
+        $(".actDesigner").slide({
+            mainCell:".bd ul",
+            effect: "leftLoop",
+            delayTime: "1000",
+            autoPlay: true,
+            prevBtn: ".prev",
+            nextBtn: ".next"
+        });
+        $(".actExample").slide({
+            mainCell:".bd ul",
+            effect: "fade",
+            delayTime: "1000",
+            autoPlay: true
+        });
+        /*底部预约*/
+        $(".actFixOrder .close").click(function () {
+            $(".actFixOrder").animate({
+                bottom : "-130px"
+            },500,function () {
+                $(".actFixFold").animate({
+                    right : 0
+                },500);
+            })
+        });
+        $(".actFixFold").click(function () {
+            $(".actFixFold").animate({
+                right : "-280px"
+            },500,function () {
+                $(".actFixOrder").animate({
+                    bottom : 0
+                },500);
+            })
+        });
+        /*关闭弹框*/
+        $(".hdMask,.close").click(function () {
+            $("body").css("overflow","auto");
+            $(".hdMask,.resPop,.actOrderScu,.actOrderRedScu,.actOrderCostScu,.costForm").hide();
+        });
+        //显示弹框
+        $(".actPopBtn").click(function () {
+            $("body").css("overflow","hidden");
+            popNormal();
+        });
+        $(".redBag").click(function () {
+            $("body").css("overflow","hidden");
+            popRedbag();
+        });
+        $("#button1,#button2,#button3,#button4").click(function (e) {
             e.preventDefault();
-            errorTips("报价成功！");
-        })
-    </script>
-
+            actOrderScu();
+        });
+        $("#button5").click(function (e) {
+            e.preventDefault();
+            redBagOrderScu();
+        });
+        $("#button6").click(function (e) {
+            e.preventDefault();
+            costOrderScu();
+        });
+    });
+</script>
 </body>
 </html>
